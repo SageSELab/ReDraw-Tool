@@ -1,0 +1,2 @@
+#app-name,app-package,main-activity,apk-path,event-logs-folder,output-folder,tester, install
+calculator,com.android2.calculator3,com.android2.calculator3.Calculator,/Users/mariolinares/Documents/academy/2015/ICSE-Android-test/android_packages_apps_Calculator.apk,/Users/mariolinares/Documents/academy/2015/ICSE-Android-test/test-data/calculator/mario,/Users/mariolinares/Documents/academy/2015/ICSE-Android-test/test-data-output,mario,0 

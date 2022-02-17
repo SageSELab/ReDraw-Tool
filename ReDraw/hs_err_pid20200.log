@@ -1,0 +1,250 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x000000006e5a60c9, pid=20200, tid=0x0000000000000dc4
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_181-b13) (build 1.8.0_181-b13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.181-b13 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# V  [jvm.dll+0x1460c9]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000025ad000):  JavaThread "main" [_thread_in_vm, id=3524, stack(0x00000000024a0000,0x00000000025a0000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x0000000000000000
+
+Registers:
+RAX=0x0000000000000000, RBX=0x00000000025ad000, RCX=0x0000000000000d00, RDX=0x0000000000000000
+RSP=0x000000000259f350, RBP=0x000000001e1de220, RSI=0x0000000000000000, RDI=0x0000000000000000
+R8 =0x000000006ec06eb0, R9 =0x0000000000000047, R10=0x000000001d1c4527, R11=0x0000000781343a36
+R12=0x0000000000000000, R13=0x0000000000000000, R14=0x000000000259f4e0, R15=0x00000000007336c0
+RIP=0x000000006e5a60c9, EFLAGS=0x0000000000010202
+
+Top of Stack: (sp=0x000000000259f350)
+0x000000000259f350:   0000000000000000 0000000000000000
+0x000000000259f360:   0000000000000000 0000000000000000
+0x000000000259f370:   00000000025ad1f8 00007ff8efea4967
+0x000000000259f380:   0000000019596238 00000000025ad1f8
+0x000000000259f390:   0000000000000000 0000000019596238
+0x000000000259f3a0:   000000000259f868 00000000025ad810
+0x000000000259f3b0:   00000000000003d8 00000000025ad820
+0x000000000259f3c0:   000000001d1c44e0 00000000025ad000
+0x000000000259f3d0:   0000000019596238 000000001e1de220
+0x000000000259f3e0:   00000000025ad000 000000000259f4e0
+0x000000000259f3f0:   0000000000000000 00000000ffffffff
+0x000000000259f400:   0000000000200031 000000000259f4a8
+0x000000000259f410:   0000000019596238 00000000026b8c67
+0x000000000259f420:   0000000019596220 000000000259f4b8
+0x000000000259f430:   000000000259f4e0 00000000026b89ab
+0x000000000259f440:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x000000006e5a60c9)
+0x000000006e5a60a9:   a9 00 00 00 30 74 08 48 8b cb e8 e8 d6 0f 00 c7
+0x000000006e5a60b9:   83 70 02 00 00 06 00 00 00 80 3d a8 d8 6c 00 00
+0x000000006e5a60c9:   48 8b 0f b8 10 00 00 00 ba 0c 00 00 00 0f 45 c2
+0x000000006e5a60d9:   48 98 8b 3c 08 c7 83 70 02 00 00 07 00 00 00 83 
+
+
+Register to memory mapping:
+
+RAX=0x0000000000000000 is an unknown value
+RBX=0x00000000025ad000 is a thread
+RCX=0x0000000000000d00 is an unknown value
+RDX=0x0000000000000000 is an unknown value
+RSP=0x000000000259f350 is pointing into the stack for thread: 0x00000000025ad000
+RBP=0x000000001e1de220 is an unknown value
+RSI=0x0000000000000000 is an unknown value
+RDI=0x0000000000000000 is an unknown value
+R8 =0x000000006ec06eb0 is an unknown value
+R9 =0x0000000000000047 is an unknown value
+R10=0x000000001d1c4527 is an unknown value
+R11=0x0000000781343a36 is an unknown value
+R12=0x0000000000000000 is an unknown value
+R13=0x0000000000000000 is an unknown value
+R14=0x000000000259f4e0 is pointing into the stack for thread: 0x00000000025ad000
+R15=0x00000000007336c0 is an unknown value
+
+
+Stack: [0x00000000024a0000,0x00000000025a0000],  sp=0x000000000259f350,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1460c9]
+C  [tensorflow_jni.dll+0x1e4967]
+C  0x00000000026b8c67
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  org.tensorflow.SavedModelBundle.load(Ljava/lang/String;[Ljava/lang/String;[B[B)Lorg/tensorflow/SavedModelBundle;+0
+j  org.tensorflow.SavedModelBundle.access$000(Ljava/lang/String;[Ljava/lang/String;[B[B)Lorg/tensorflow/SavedModelBundle;+4
+j  org.tensorflow.SavedModelBundle$Loader.load()Lorg/tensorflow/SavedModelBundle;+16
+j  edu.wm.semeru.redraw.helpers.TensorHelper.readSavedModel(Ljava/lang/String;)Lorg/tensorflow/SavedModelBundle;+6
+j  edu.wm.semeru.redraw.helpers.TensorHelper.main([Ljava/lang/String;)V+2
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000001bb73800 JavaThread "Service Thread" daemon [_thread_blocked, id=18512, stack(0x000000001c680000,0x000000001c780000)]
+  0x000000001bae3800 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=20736, stack(0x000000001c580000,0x000000001c680000)]
+  0x000000001bae0800 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=18196, stack(0x000000001c480000,0x000000001c580000)]
+  0x000000001bad0000 JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=12408, stack(0x000000001c380000,0x000000001c480000)]
+  0x000000001bac9000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=19476, stack(0x000000001c280000,0x000000001c380000)]
+  0x000000001bac6000 JavaThread "Attach Listener" daemon [_thread_blocked, id=17832, stack(0x000000001c180000,0x000000001c280000)]
+  0x000000001bacd000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=16844, stack(0x000000001c080000,0x000000001c180000)]
+  0x0000000019b89000 JavaThread "Finalizer" daemon [_thread_blocked, id=2040, stack(0x000000001be90000,0x000000001bf90000)]
+  0x0000000019b80000 JavaThread "Reference Handler" daemon [_thread_blocked, id=11416, stack(0x000000001b990000,0x000000001ba90000)]
+=>0x00000000025ad000 JavaThread "main" [_thread_in_vm, id=3524, stack(0x00000000024a0000,0x00000000025a0000)]
+
+Other Threads:
+  0x0000000019b79800 VMThread [stack: 0x000000001b890000,0x000000001b990000] [id=7208]
+  0x000000001bbd9800 WatcherThread [stack: 0x000000001c780000,0x000000001c880000] [id=20856]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 57344K, used 11653K [0x0000000780900000, 0x0000000784900000, 0x00000007c0000000)
+  eden space 49152K, 23% used [0x0000000780900000,0x00000007814617b0,0x0000000783900000)
+  from space 8192K, 0% used [0x0000000784100000,0x0000000784100000,0x0000000784900000)
+  to   space 8192K, 0% used [0x0000000783900000,0x0000000783900000,0x0000000784100000)
+ ParOldGen       total 131072K, used 0K [0x0000000701a00000, 0x0000000709a00000, 0x0000000780900000)
+  object space 131072K, 0% used [0x0000000701a00000,0x0000000701a00000,0x0000000709a00000)
+ Metaspace       used 3120K, capacity 4552K, committed 4864K, reserved 1056768K
+  class space    used 333K, capacity 388K, committed 512K, reserved 1048576K
+
+Card table byte_map: [0x0000000011a60000,0x0000000012060000] byte_map_base: 0x000000000e253000
+
+Marking Bits: (ParMarkBitMap*) 0x000000006ec82d00
+ Begin Bits: [0x0000000012c60000, 0x0000000015bf8000)
+ End Bits:   [0x0000000015bf8000, 0x0000000018b90000)
+
+Polling page: 0x00000000009a0000
+
+CodeCache: size=245760Kb used=1849Kb max_used=1849Kb free=243910Kb
+ bounds [0x00000000026a0000, 0x0000000002910000, 0x00000000116a0000]
+ total_blobs=510 nmethods=274 adapters=149
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.505 Thread 0x000000001bae3800  271       3       java.util.zip.ZipEntry::getSize (5 bytes)
+Event: 0.505 Thread 0x000000001bae3800 nmethod 271 0x000000000285ee10 code [0x000000000285ef60, 0x000000000285f0b0]
+Event: 0.506 Thread 0x000000001bae3800  272       3       java.net.URLStreamHandler::setURL (40 bytes)
+Event: 0.506 Thread 0x000000001bae3800 nmethod 272 0x000000000285e750 code [0x000000000285e8e0, 0x000000000285ec98]
+Event: 0.506 Thread 0x000000001bae3800  274       3       java.net.URLStreamHandler::parseURL (1193 bytes)
+Event: 0.515 Thread 0x000000001bae3800 nmethod 274 0x000000000285f510 code [0x0000000002860040, 0x0000000002869c48]
+Event: 0.515 Thread 0x000000001bae3800  273   !   3       java.net.URL::set (114 bytes)
+Event: 0.515 Thread 0x000000001bae3800 nmethod 273 0x000000000285d3d0 code [0x000000000285d5c0, 0x000000000285e118]
+Event: 0.515 Thread 0x000000001bae3800  275       3       java.util.ArrayDeque::poll (5 bytes)
+Event: 0.516 Thread 0x000000001bae3800 nmethod 275 0x000000000285d010 code [0x000000000285d180, 0x000000000285d328]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (1 events):
+Event: 0.220 Thread 0x00000000025ad000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000027b5c34 method=java.lang.String.hashCode()I @ 14
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.465 Thread 0x00000000025ad000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000781286fd0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u181\11358\hotspot\src\share\vm\prims\jvm.cpp, line 1435]
+Event: 0.465 Thread 0x00000000025ad000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000781288640) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u181\11358\hotspot\src\share\vm\prims\jvm.cpp, line 1435]
+Event: 0.465 Thread 0x00000000025ad000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000781288850) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u181\11358\hotspot\src\share\vm\prims\jvm.cpp, line 1435]
+Event: 0.465 Thread 0x00000000025ad000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000781289eb8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u181\11358\hotspot\src\share\vm\prims\jvm.cpp, line 1435]
+Event: 0.465 Thread 0x00000000025ad000 Exception <a 'java/security/PrivilegedActionException'> (0x000000078128a0c8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u181\11358\hotspot\src\share\vm\prims\jvm.cpp, line 1435]
+Event: 0.465 Thread 0x00000000025ad000 Exception <a 'java/security/PrivilegedActionException'> (0x000000078128b4a0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u181\11358\hotspot\src\share\vm\prims\jvm.cpp, line 1435]
+Event: 0.465 Thread 0x00000000025ad000 Exception <a 'java/security/PrivilegedActionException'> (0x000000078128b6b0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u181\11358\hotspot\src\share\vm\prims\jvm.cpp, line 1435]
+Event: 0.465 Thread 0x00000000025ad000 Exception <a 'java/security/PrivilegedActionException'> (0x000000078128cb58) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u181\11358\hotspot\src\share\vm\prims\jvm.cpp, line 1435]
+Event: 0.465 Thread 0x00000000025ad000 Exception <a 'java/security/PrivilegedActionException'> (0x000000078128cd68) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u181\11358\hotspot\src\share\vm\prims\jvm.cpp, line 1435]
+Event: 0.508 Thread 0x00000000025ad000 Exception <a 'java/lang/UnsatisfiedLinkError': org.tensorflow.TensorFlow.version()Ljava/lang/String;> (0x0000000781376000) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u181\11358\hotspot\src\share\vm\prims\nativeLookup.cpp, line 378]
+
+Events (10 events):
+Event: 0.505 loading class java/util/concurrent/ConcurrentHashMap$ForwardingNode
+Event: 0.505 loading class java/util/concurrent/ConcurrentHashMap$ForwardingNode done
+Event: 0.505 loading class org/tensorflow/NativeLibrary
+Event: 0.505 loading class org/tensorflow/NativeLibrary done
+Event: 0.507 loading class java/lang/IllegalStateException
+Event: 0.507 loading class java/lang/IllegalStateException done
+Event: 0.508 loading class java/lang/ClassLoaderHelper
+Event: 0.508 loading class java/lang/ClassLoaderHelper done
+Event: 0.595 loading class org/tensorflow/SavedModelBundle$Loader
+Event: 0.595 loading class org/tensorflow/SavedModelBundle$Loader done
+
+
+Dynamic libraries:
+0x00007ff74be90000 - 0x00007ff74bec7000 	C:\Program Files\Java\jre1.8.0_181\bin\javaw.exe
+0x00007ff976e70000 - 0x00007ff977051000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff944780000 - 0x00007ff944792000 	C:\Program Files\AVAST Software\Avast\aswhook.dll
+0x00007ff975eb0000 - 0x00007ff975f62000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff973620000 - 0x00007ff973893000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff976ba0000 - 0x00007ff976c41000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff975d50000 - 0x00007ff975dee000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff975fd0000 - 0x00007ff97602b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff976550000 - 0x00007ff976674000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff976770000 - 0x00007ff976900000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff9734e0000 - 0x00007ff973500000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff9757e0000 - 0x00007ff975808000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff973a50000 - 0x00007ff973be2000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff973580000 - 0x00007ff97361f000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff9738a0000 - 0x00007ff97399a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff9632b0000 - 0x00007ff963519000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17134.590_none_fb3d9bff3069e088\COMCTL32.dll
+0x00007ff976030000 - 0x00007ff976352000 	C:\WINDOWS\System32\combase.dll
+0x00007ff973500000 - 0x00007ff97357a000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff976c70000 - 0x00007ff976c9d000 	C:\WINDOWS\System32\IMM32.DLL
+0x000000006e1a0000 - 0x000000006e272000 	C:\Program Files\Java\jre1.8.0_181\bin\msvcr100.dll
+0x000000006e460000 - 0x000000006ed02000 	C:\Program Files\Java\jre1.8.0_181\bin\server\jvm.dll
+0x00007ff976a30000 - 0x00007ff976a38000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ff9616c0000 - 0x00007ff9616c9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff976700000 - 0x00007ff97676c000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff96dbb0000 - 0x00007ff96dbd3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff96c3f0000 - 0x00007ff96c3fa000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff96db30000 - 0x00007ff96db5a000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ff973430000 - 0x00007ff973479000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x000000006e370000 - 0x000000006e37f000 	C:\Program Files\Java\jre1.8.0_181\bin\verify.dll
+0x000000006e340000 - 0x000000006e369000 	C:\Program Files\Java\jre1.8.0_181\bin\java.dll
+0x000000006e320000 - 0x000000006e336000 	C:\Program Files\Java\jre1.8.0_181\bin\zip.dll
+0x00007ff974300000 - 0x00007ff975740000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ff975df0000 - 0x00007ff975e99000 	C:\WINDOWS\System32\shcore.dll
+0x00007ff973bf0000 - 0x00007ff9742fd000 	C:\WINDOWS\System32\windows.storage.dll
+0x00007ff976360000 - 0x00007ff9763b1000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ff973180000 - 0x00007ff973191000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ff973200000 - 0x00007ff97321f000 	C:\WINDOWS\System32\profapi.dll
+0x00007ff9731b0000 - 0x00007ff9731fc000 	C:\WINDOWS\System32\powrprof.dll
+0x00007ff9731a0000 - 0x00007ff9731aa000 	C:\WINDOWS\System32\FLTLIB.DLL
+0x00007ff8efcc0000 - 0x00007ff8f36f8000 	C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib\tensorflow_jni.dll
+0x00007ff964b00000 - 0x00007ff964b9c000 	C:\Program Files\Java\jre1.8.0_181\bin\MSVCP140.dll
+0x00007ff9675c0000 - 0x00007ff9675d6000 	C:\Program Files\Java\jre1.8.0_181\bin\VCRUNTIME140.dll
+0x00007ff9719e0000 - 0x00007ff971ba9000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Djava.library.path=C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib;C:\scratch\mjcurcio.scratch\matlab\bin\glnxa64;C:\Users\KevinMoran\opencv\build\lib -Dfile.encoding=Cp1252 
+java_command: edu.wm.semeru.redraw.helpers.TensorHelper
+java_class_path (initial): C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\bin;C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib\bcpkix-jdk15on-1.57.jar;C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib\bcprov-jdk15on-157.jar;C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib\commons-io-2.5.jar;C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib\core-0.26-sources.jar;C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib\core-0.26.jar;C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib\engine.jar;C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib\guava-19.0.jar;C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib\jamtio.jar;C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib\photohawk.jar;C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib\log4j-api-2.7.jar;C:\Users\Andrew\Documents\Git\school\ReDraw\ReDraw\lib\log4j-core-2.7.jar;C:\Users\Andrew\Documents\Git\school\ReDraw\Android-Core\target\classes;C:\Users\Andrew\.m2\repository\com\github\vidstige\jadb\v1.1.0\jadb-v1.1.0.jar;C:\Users\Andrew\.m2\repository\org\mockito\mockito-core\2.7.17\mockito-core-2.7.17.jar;C:\Users\Andrew\.m2\repository\net\bytebuddy\byte-buddy\1.6.11\byte-buddy-1.6.11.jar;C:\Users\Andrew\.m2\repository\net\bytebuddy\byte-buddy-agent\1.6.11\byte-buddy-agent-1.6.11.jar;C:\Users\Andrew\.m2\repository\org\objenesis\objenesis\2.5\objenesis-2.5.jar;C:\Users\Andrew\.m2\repository\mysql\mysql-connector-java\5.1.31\mysql-connector-java-5.1.31.jar;C:\Users\Andrew\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar;C:\Users\Andrew\.m2\repository\org\eclipse\persistence\javax.persistence\2.0.0\javax.persistence-2.0.0.jar;C:\Users\Andrew\Documents\Git\school\ReDraw\SEMERU-Core\target\classes;C:\Users\Andrew\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Andrew\.m2\repository\org\jdom\jdom2\2.0.5\jdom2-2.0.5.jar;C:\Users\Andrew\.m2\repository\edu\stanford\nlp\stanford-corenlp\3.8.0\stanford-corenlp-3.8.0.jar;C:\Users\Andrew\.m2\r
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+USERNAME=Andrew
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17134 (10.0.17134.556)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 94 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 12470048k(4533612k free), swap 14370592k(2133748k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.181-b13) for windows-amd64 JRE (1.8.0_181-b13), built on Jul  7 2018 04:01:33 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Thu Feb 21 19:46:50 2019
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

@@ -1,0 +1,15 @@
+Button
+CheckBox
+checkedtextview
+EditText
+imagebutton
+ImageView
+numberpicker
+progressbar
+radiobutton
+ratingbar
+seekbar
+spinner
+Switch
+TextView
+togglebutton

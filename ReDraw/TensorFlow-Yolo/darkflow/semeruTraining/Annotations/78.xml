@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotation>
+  <folder>/scratch/mjcurcio.scratch/workspace/AndroidComponentDetector/TensorFlow-Yolo/darkflow/semeruTraining/JPEGImages</folder>
+  <filename>78.jpg</filename>
+  <source>
+    <database>SEMERU Android GUI Database</database>
+    <annotation>SEMERU Lab</annotation>
+    <image>Nexus7screenshot</image>
+  </source>
+  <owner>
+    <name>SEMERU</name>
+  </owner>
+  <size>
+    <width>1200</width>
+    <height>1920</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>android.widget.FrameLayout</name>
+    <pose>unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>776</xmin>
+      <ymin>146</ymin>
+      <xmax>1200</xmax>
+      <ymax>274</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>android.widget.LinearLayout</name>
+    <pose>unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>792</xmin>
+      <ymin>162</ymin>
+      <xmax>1184</xmax>
+      <ymax>258</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>android.widget.RelativeLayout</name>
+    <pose>unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>824</xmin>
+      <ymin>185</ymin>
+      <xmax>1152</xmax>
+      <ymax>234</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>android.widget.TextView</name>
+    <pose>unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>824</xmin>
+      <ymin>185</ymin>
+      <xmax>1152</xmax>
+      <ymax>234</ymax>
+    </bndbox>
+  </object>
+</annotation>

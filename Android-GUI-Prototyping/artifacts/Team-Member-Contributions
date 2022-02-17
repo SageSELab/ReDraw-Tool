@@ -1,0 +1,29 @@
+Contributions by Michael Curcio
+ * Rudimentary GUI (through sprint 4) & command line functionality
+ * Relative Layout implementation (qualitative attributes, margins)
+ * Linear Layout implementation (weights, margins) (orientation done by Powell)
+ * px -> dp conversion and screen size scaling 
+ * subclass implementations: ScrollView, TabWidget, Table, TableRow
+
+Contributions by Jacob Harless
+* XMLParser
+* android res files
+* GUI
+
+Contributions by Wesley Hatin
+ * Setting up the mySQL database
+ * Smoothing out the GUI
+
+Contrbutions by Ndukwe Iko
+* Sorting and grouping components into LinearLayouts via heuristics
+   (LayoutBuilder, LayoutSorter, etc)
+ * RelativeLayout algorithms & design
+ * Screen linking (partially implemented)
+
+Contributions by Ben Powell
+ * Basic LinearLayout skeleton (no weights)
+ * Some of the XMLParser (along with Harless)
+ * Button colors (background and text) estimated through screenshots
+ * ImageView/ImageButton images cropped out of screenshot
+ * Background images extracted from screenshots
+ * ProjectBuilder class, apk generation (pseudo-shell scripts)

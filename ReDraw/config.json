@@ -1,0 +1,18 @@
+{
+	"config": {
+		"FinalOutputDirectory":"C:\\Redraw\\FinalOutput",
+		"PreliminaryOutputDirectory":"C:\\Redraw\\Output",
+		"PathToNet":"C:\\Redraw\\frozen_inception_v3.pb",
+		"PathToKnnData":"C:\\Redraw\\tiers",
+		"pathToAndroidSDK":"C:\\AndroidSDK",
+		"pathToTesseract":"C:\\ReDraw\\tesseract-win",
+		"labelFile":"C:\\ReDraw\\labels.txt",
+		"scriptPath":"C:\\ReDraw\\redrawClassify.py",
+		"inputLayer":"input:0",
+		"outputLayer":"InceptionV3/Predictions/Reshape_1:0",
+		"useREMAUI":"false",
+		"useAbsolutePositioning":"true",
+		"inputFolder":"C:\\ReDraw-REMAUI-Pix2Code-Oracle-Images-and-XML\\oracle",
+		"pythonCommand":"python"
+	}
+}

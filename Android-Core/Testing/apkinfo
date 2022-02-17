@@ -1,0 +1,174 @@
+{
+  "A2DP_v2.12.7.apk": {
+    "packageName": "a2dp.Vol",
+    "versionName": "2.12.7",
+    "mainActivity": "a2dp.Vol.main",
+    "appName": "A2DP Volume",
+    "sdkVersion": "19",
+    "targetSdkVersion": "23"
+  },
+  "2048_v2.0.apk": {
+    "packageName": "com.dt.game2048",
+    "versionName": "2.0",
+    "mainActivity": "com.dt.game2048.MainActivity",
+    "appName": "2048",
+    "sdkVersion": "15",
+    "targetSdkVersion": "23"
+  },
+  "Compass_v3.4.apk": {
+    "packageName": "com.dt.compass",
+    "versionName": "3.4",
+    "mainActivity": "com.dt.compass.WelcomeActivity",
+    "appName": "Compass For Free",
+    "sdkVersion": "16",
+    "targetSdkVersion": "23"
+  },
+  "Soundboard_v1.06.apk": {
+    "packageName": "com.kernull.mobile.soundboard",
+    "versionName": "1.06",
+    "mainActivity": "com.kernull.mobile.soundboard.splash",
+    "appName": "Soundboard",
+    "sdkVersion": "15",
+    "targetSdkVersion": "21"
+  },
+  "CraftingTipsMinecraftPE_v4.4.4.apk": {
+    "packageName": "com.ubk.app.tipsguideandcheats.minecraftpocketedition",
+    "versionName": "4.4.4",
+    "mainActivity": "com.ubk.app.tipsguideandcheats.minecraftpocketedition.SplashScreen",
+    "appName": "Crafting Tips Minecraft PE",
+    "sdkVersion": "11",
+    "targetSdkVersion": "23"
+  },
+  "Sephora_v16.8.0.apk": {
+    "packageName": "com.sephora",
+    "versionName": "16.8.0",
+    "mainActivity": "com.sephora.appmodules.splash.SplashActivity",
+    "appName": "Sephora",
+    "sdkVersion": "18",
+    "targetSdkVersion": "23"
+  },
+  "Calculator_v7.1.1.apk": {
+    "packageName": "com.google.android.calculator",
+    "versionName": "7.1.1 (3300836)",
+    "appName": "Sakrekenaar",
+    "sdkVersion": "21",
+    "targetSdkVersion": "25"
+  },
+  "MedicalDictionaryOffline_v1.0.apk": {
+    "packageName": "medical.offline.Dictionary",
+    "versionName": "1.0",
+    "mainActivity": "buet.rafi.dictionary.Dictionary",
+    "appName": "Medical Dictionary Offline",
+    "sdkVersion": "15",
+    "targetSdkVersion": "22"
+  },
+  "Zooborns_v1.4.7.apk": {
+    "packageName": "org.angrybeanie.zooborns",
+    "versionName": "1.4.7",
+    "mainActivity": "org.angrybeanie.zooborns.ZooBorns",
+    "appName": "ZooBorns",
+    "sdkVersion": "7",
+    "targetSdkVersion": "13"
+  },
+  "acquariusoft.FileDownloader.apk": {
+    "packageName": "acquariusoft.FileDownloader",
+    "versionName": "0.3.0",
+    "mainActivity": "acquariusoft.FileDownloader.FileDownloader",
+    "appName": "FileDownloader",
+    "sdkVersion": "3"
+  },
+  "Checkers_v1.27.0.apk": {
+    "packageName": "pl.lukok.draughts",
+    "versionName": "1.27.0",
+    "mainActivity": "pl.lukok.draughts.ui.GameActivity",
+    "appName": "Draughts",
+    "sdkVersion": "15",
+    "targetSdkVersion": "25"
+  },
+  "MyCalSports_v4.1.apk": {
+    "packageName": "mappstreet.mycalsports",
+    "versionName": "4.1",
+    "mainActivity": "mappstreet.mycalsports.view.SplashActivity",
+    "appName": "MyCal Sports",
+    "sdkVersion": "15",
+    "targetSdkVersion": "22"
+  },
+  "OxfordDictionaryofEnglish_v7.0.177.apk": {
+    "packageName": "com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish",
+    "versionName": "7.0.177",
+    "mainActivity": "com.mobisystems.msdict.viewer.MainActivity",
+    "appName": "Oxford Dictionary of English",
+    "sdkVersion": "16",
+    "targetSdkVersion": "25"
+  },
+  "RemindMe_v1.52.apk": {
+    "packageName": "countdown.reminder.widget",
+    "versionName": "1.52",
+    "mainActivity": "countdown.reminder.widget.MainActivity",
+    "appName": "Remind Me",
+    "sdkVersion": "16",
+    "targetSdkVersion": "22"
+  },
+  "Chess_v2.2.0.apk": {
+    "packageName": "com.jetstartgames.chess",
+    "versionName": "2.2.0",
+    "mainActivity": "com.jetstartgames.MenuActivity",
+    "appName": "Chess",
+    "sdkVersion": "9",
+    "targetSdkVersion": "21"
+  },
+  "EasyRecipes_v1.0.2.apk": {
+    "packageName": "com.eatit.easyrecipes",
+    "versionName": "1.0.2",
+    "mainActivity": "com.eatit.easyrecipes.MainActivity",
+    "appName": "",
+    "sdkVersion": "14",
+    "targetSdkVersion": "23"
+  },
+  "com.gau.go.launcherex.theme.co.apk": {
+    "packageName": "com.gau.go.launcherex.theme.co",
+    "versionName": "1.0",
+    "appName": "CO Theme Go Launcher EX",
+    "sdkVersion": "5"
+  },
+  "ACal_v5.0.apk": {
+    "packageName": "com.domi.app.acal",
+    "versionName": "5.0",
+    "mainActivity": "com.domi.app.acal.LaunchActivity",
+    "appName": "ACal",
+    "sdkVersion": "16",
+    "targetSdkVersion": "21"
+  },
+  "Textgram_v3.0.8.apk": {
+    "packageName": "codeadore.textgram",
+    "versionName": "3.0.8",
+    "mainActivity": "codeadore.textgram.MainActivity",
+    "appName": "Textgram",
+    "sdkVersion": "11",
+    "targetSdkVersion": "25"
+  },
+  "Futbol24_v1.9.1.apk": {
+    "packageName": "com.gluak.f24",
+    "versionName": "1.9.1",
+    "mainActivity": "com.gluak.f24.app.F24",
+    "appName": "Futbol24",
+    "sdkVersion": "9",
+    "targetSdkVersion": "19"
+  },
+  "Pedometer_v5.18.apk": {
+    "packageName": "com.tayu.tau.pedometer",
+    "versionName": "5.18",
+    "mainActivity": "com.tayu.tau.pedometer.MainActivity",
+    "appName": "Pedometer",
+    "sdkVersion": "9",
+    "targetSdkVersion": "24"
+  },
+  "MyMusicPlayer_v1.2.5.7.apk": {
+    "packageName": "com.pd.td",
+    "versionName": "1.2.5.7",
+    "mainActivity": "com.pd.td.activities.GuideActivity",
+    "appName": "My Music",
+    "sdkVersion": "16",
+    "targetSdkVersion": "23"
+  }
+}

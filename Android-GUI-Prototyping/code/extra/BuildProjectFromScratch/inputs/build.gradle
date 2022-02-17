@@ -1,0 +1,21 @@
+/*
+ * Buildscript for the "simplest android project".
+ */
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.3'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+// Might need to change this for your version of Android, oddly
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+}

@@ -1,0 +1,116 @@
+﻿add device 1: /dev/input/event5
+
+  name:     "gpio-keys"
+
+add device 2: /dev/input/event3
+
+  name:     "apq8064-tabla-snd-card Headset Jack"
+
+add device 3: /dev/input/event2
+
+  name:     "apq8064-tabla-snd-card Button Jack"
+
+add device 4: /dev/input/event4
+
+  name:     "h2w button"
+
+add device 5: /dev/input/event1
+
+  name:     "lid_input"
+
+add device 6: /dev/input/event0
+
+  name:     "elan-touchscreen"
+
+could not get driver version for /dev/input/mice, Not a typewriter
+
+[  112044.888489] /dev/input/event0: 0003 0039 00000492
+
+[  112044.888519] /dev/input/event0: 0003 0030 0000000d
+
+[  112044.888519] /dev/input/event0: 0003 003a 0000003d
+
+[  112044.888519] /dev/input/event0: 0003 0035 000001cf
+
+[  112044.888550] /dev/input/event0: 0003 0036 00000638
+
+[  112044.888550] /dev/input/event0: 0000 0000 00000000
+
+[  112044.940643] /dev/input/event0: 0003 0039 ffffffff
+
+[  112044.940674] /dev/input/event0: 0000 0000 00000000
+
+[  112045.592377] /dev/input/event0: 0003 0039 00000493
+
+[  112045.592407] /dev/input/event0: 0003 0030 0000000a
+
+[  112045.592407] /dev/input/event0: 0003 003a 0000001b
+
+[  112045.592407] /dev/input/event0: 0003 0035 00000404
+
+[  112045.592438] /dev/input/event0: 0003 0036 00000641
+
+[  112045.592438] /dev/input/event0: 0000 0000 00000000
+
+[  112045.670502] /dev/input/event0: 0003 0039 ffffffff
+
+[  112045.670532] /dev/input/event0: 0000 0000 00000000
+
+[  112046.169373] /dev/input/event0: 0003 0039 00000494
+
+[  112046.169373] /dev/input/event0: 0003 0030 0000000c
+
+[  112046.169403] /dev/input/event0: 0003 003a 00000024
+
+[  112046.169403] /dev/input/event0: 0003 0035 000001cd
+
+[  112046.169434] /dev/input/event0: 0003 0036 0000060c
+
+[  112046.169434] /dev/input/event0: 0000 0000 00000000
+
+[  112046.222107] /dev/input/event0: 0003 0039 ffffffff
+
+[  112046.222137] /dev/input/event0: 0000 0000 00000000
+
+[  112046.949890] /dev/input/event0: 0003 0039 00000495
+
+[  112046.949921] /dev/input/event0: 0003 0030 00000008
+
+[  112046.949921] /dev/input/event0: 0003 003a 00000019
+
+[  112046.949921] /dev/input/event0: 0003 0035 000004da
+
+[  112046.949951] /dev/input/event0: 0003 0036 000007d1
+
+[  112046.949951] /dev/input/event0: 0000 0000 00000000
+
+[  112047.024567] /dev/input/event0: 0003 0030 00000006
+
+[  112047.024597] /dev/input/event0: 0003 003a 0000001c
+
+[  112047.024597] /dev/input/event0: 0003 0035 000004d7
+
+[  112047.024597] /dev/input/event0: 0003 0036 000007db
+
+[  112047.024628] /dev/input/event0: 0000 0000 00000000
+
+[  112047.034393] /dev/input/event0: 0003 0039 ffffffff
+
+[  112047.034393] /dev/input/event0: 0000 0000 00000000
+
+[  112049.013458] /dev/input/event0: 0003 0039 00000496
+
+[  112049.013489] /dev/input/event0: 0003 0030 00000008
+
+[  112049.013489] /dev/input/event0: 0003 003a 00000015
+
+[  112049.013489] /dev/input/event0: 0003 0035 000004f1
+
+[  112049.013519] /dev/input/event0: 0003 0036 00000573
+
+[  112049.013519] /dev/input/event0: 0000 0000 00000000
+
+[  112049.062195] /dev/input/event0: 0003 0039 ffffffff
+
+[  112049.062225] /dev/input/event0: 0000 0000 00000000
+

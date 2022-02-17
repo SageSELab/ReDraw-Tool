@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<hierarchy rotation="2">
+    <node index="0" text="" resource-id="" class="android.widget.FrameLayout" package="proto.autogen" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1600,2464]">
+        <node index="0" text="" resource-id="android:id/decor_content_parent" class="android.view.ViewGroup" package="proto.autogen" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1600,2464]">
+            <node index="0" text="" resource-id="android:id/action_bar_container" class="android.widget.FrameLayout" package="proto.autogen" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,48][1600,176]">
+                <node index="0" text="" resource-id="android:id/action_bar" class="android.view.ViewGroup" package="proto.autogen" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,48][1600,176]">
+                    <node index="0" text="Auto-Generated Application" resource-id="" class="android.widget.TextView" package="proto.autogen" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[48,85][542,139]" />
+                </node>
+            </node>
+            <node index="1" text="" resource-id="android:id/content" class="android.widget.FrameLayout" package="proto.autogen" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,176][1600,2464]">
+                <node index="0" text="" resource-id="" class="android.widget.LinearLayout" package="proto.autogen" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,176][1600,2464]">
+                    <node index="0" text="Text Box One!" resource-id="proto.autogen:id/textView" class="android.widget.TextView" package="proto.autogen" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,176][1600,778]" />
+                    <node index="1" text="Text Box Two!" resource-id="proto.autogen:id/textView2" class="android.widget.TextView" package="proto.autogen" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,778][1600,1380]" />
+                    <node index="2" text="BIG BUTTON!" resource-id="proto.autogen:id/button" class="android.widget.Button" package="proto.autogen" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,1380][1600,2040]" />
+                    <node NAF="true" index="3" text="" resource-id="" class="android.widget.ImageButton" package="proto.autogen" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,2040][1600,2464]" />
+                </node>
+            </node>
+        </node>
+    </node>
+</hierarchy>

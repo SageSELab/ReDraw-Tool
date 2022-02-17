@@ -1,0 +1,17 @@
+Sprint 2:
+ - Be able to generate code (don't need a full .apk, just have something
+   importable)
+ - Make up for lost points from Sprint 1
+   - Milestones
+   - Some other stuff
+   - Don't present the changes, but make them
+ - Presentation
+    - Rationale
+    - Design and Problems
+    - Show working code
+    - Show plans for Sprint 3
+
+Sprint 3:
+ - Heirarchy (Grid/Linear/Relative w/heuristics)
+ - Linking multiple screens
+ - .psd parsing, possibly

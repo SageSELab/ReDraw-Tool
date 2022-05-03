@@ -60,10 +60,10 @@ python preprocessing.py
 We are using VGG16 model which is pre-trained on ImageNet model and finetuning it with ReDraw Dataset.
 
 Hyper-Parameters while model training:
-> image_size = (224,224)
-batch_size = 32
-epoch=5
-early stop (monitor='val_accuracy', patience=3)
+- image_size = (224,224)
+- batch_size = 32
+- epoch=5
+- early stop (monitor='val_accuracy', patience=3)
 
 ```
 python train_model.py

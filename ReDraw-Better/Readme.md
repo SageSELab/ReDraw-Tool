@@ -68,13 +68,6 @@ early stop (monitor='val_accuracy', patience=3)
 ```
 python train_model.py
 ```
-
-## Part 2: Using Trained Model for predicting output on images of sub-components obtained from UIED Model.
-
-The first step when we get an image of an android UI is to detect sub-component. For sub-component detection we compare a couple of models and used UIED as it performed the best. 
-
-
-
 ## Project Structure (For reference only)
 ```bash
 ReDraw-Better/
@@ -86,5 +79,12 @@ ReDraw-Better/
 │ │ └──checkpoint
 │ │── preprocessing.py
 │ │── train_model.py
-|
 ├── Dataset/
+
+
+## Part 2: Using Trained Model for predicting output on images of sub-components obtained from UIED Model.
+
+The first step when we get an image of an android UI is to detect sub-component. For sub-component detection we compare a couple of models and used UIED as it performed the best. 
+
+
+

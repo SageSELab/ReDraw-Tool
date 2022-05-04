@@ -93,7 +93,11 @@ python train_model.py
 
 ## Part 3: Using Trained Model for predicting output on images of sub-components obtained from UIED Model.
 
-Once the model is been trained we have created a google colab notebook which can be used to generate XML file.
+Once the model is been trained we have created a google colab notebook which can be used to generate XML file. We have also added the .py file which can be used with the following command.
+
+```
+python generate_xml.py
+```
 
 [Link](https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing)
 https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing

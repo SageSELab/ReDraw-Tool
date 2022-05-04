@@ -5,7 +5,7 @@
 
 > To be changed <===> From the three main steps of Design UI, Implementing UI, and Testing UI,  ReDraw majorly focuses on automatically Implementing UI for android applications. 
 
-## Approach Over-View
+## Approach Overview
 
 - Taking input as image file.
 - Selecting 16 most commonly used sub-components of android.  
@@ -74,6 +74,11 @@ python preprocessing.py
 ```
 
 ### Model Training
+We tested several CNN models and comapred their accuracy and the time taken by them to predict the output. 
+
+<img src="https://github.com/SageSELab/ReDraw-Tool/blob/main/ReDraw-Better/images/Comparing%20Model%20Accuracy%20for%205000%20test%20images%20(1).png" />
+<img src="https://github.com/SageSELab/ReDraw-Tool/blob/main/ReDraw-Better/images/Comparing%20Model%20Runtime%20in%20seconds%20for%205000%20test%20images%20(1).png" />
+
 We are using VGG16 model which is pre-trained on ImageNet model and finetuning it with ReDraw Dataset.
 
 Hyper-Parameters while model training:

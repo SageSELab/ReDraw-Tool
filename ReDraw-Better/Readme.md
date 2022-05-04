@@ -104,5 +104,6 @@ ReDraw-Better/
 │ │ └──checkpoint
 │ │── preprocessing.py
 │ │── train_model.py
+│ │── Generate_XML.ipynb
 ├── Dataset/
 ├── UIED/

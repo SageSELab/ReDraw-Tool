@@ -1,0 +1,159 @@
+{
+    "img_shape": [
+        604,
+        337,
+        3
+    ],
+    "texts": [
+        {
+            "id": 0,
+            "content": "15:46",
+            "column_min": 293,
+            "row_min": 2,
+            "column_max": 329,
+            "row_max": 21,
+            "width": 36,
+            "height": 19
+        },
+        {
+            "id": 1,
+            "content": "SPEED DIAL",
+            "column_min": 22,
+            "row_min": 35,
+            "column_max": 92,
+            "row_max": 54,
+            "width": 70,
+            "height": 19
+        },
+        {
+            "id": 2,
+            "content": "RECENTS",
+            "column_min": 142,
+            "row_min": 35,
+            "column_max": 197,
+            "row_max": 54,
+            "width": 55,
+            "height": 19
+        },
+        {
+            "id": 3,
+            "content": "CONTACTS",
+            "column_min": 247,
+            "row_min": 34,
+            "column_max": 313,
+            "row_max": 53,
+            "width": 66,
+            "height": 19
+        },
+        {
+            "id": 4,
+            "content": "Chris Martin",
+            "column_min": 112,
+            "row_min": 82,
+            "column_max": 191,
+            "row_max": 102,
+            "width": 79,
+            "height": 20
+        },
+        {
+            "id": 5,
+            "content": "Chris Pestell",
+            "column_min": 112,
+            "row_min": 141,
+            "column_max": 193,
+            "row_max": 162,
+            "width": 81,
+            "height": 21
+        },
+        {
+            "id": 6,
+            "content": "Chris Sewell",
+            "column_min": 111,
+            "row_min": 203,
+            "column_max": 191,
+            "row_max": 221,
+            "width": 80,
+            "height": 18
+        },
+        {
+            "id": 7,
+            "content": "Christian Drew",
+            "column_min": 112,
+            "row_min": 264,
+            "column_max": 207,
+            "row_max": 284,
+            "width": 95,
+            "height": 20
+        },
+        {
+            "id": 8,
+            "content": "Christian Harris",
+            "column_min": 112,
+            "row_min": 323,
+            "column_max": 213,
+            "row_max": 343,
+            "width": 101,
+            "height": 20
+        },
+        {
+            "id": 9,
+            "content": "C C",
+            "column_min": 75,
+            "row_min": 387,
+            "column_max": 89,
+            "row_max": 405,
+            "width": 14,
+            "height": 18
+        },
+        {
+            "id": 10,
+            "content": "Christina Slatter",
+            "column_min": 112,
+            "row_min": 383,
+            "column_max": 218,
+            "row_max": 404,
+            "width": 106,
+            "height": 21
+        },
+        {
+            "id": 11,
+            "content": "Claire Eaton Whitfield",
+            "column_min": 110,
+            "row_min": 443,
+            "column_max": 252,
+            "row_max": 465,
+            "width": 142,
+            "height": 22
+        },
+        {
+            "id": 12,
+            "content": "Cliff Joseph",
+            "column_min": 112,
+            "row_min": 505,
+            "column_max": 190,
+            "row_max": 527,
+            "width": 78,
+            "height": 22
+        },
+        {
+            "id": 13,
+            "content": ".",
+            "column_min": 290,
+            "row_min": 527,
+            "column_max": 303,
+            "row_max": 530,
+            "width": 13,
+            "height": 3
+        },
+        {
+            "id": 14,
+            "content": "::",
+            "column_min": 290,
+            "row_min": 506,
+            "column_max": 303,
+            "row_max": 516,
+            "width": 13,
+            "height": 10
+        }
+    ]
+}

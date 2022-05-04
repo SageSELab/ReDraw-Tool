@@ -1,0 +1,159 @@
+{
+    "img_shape": [
+        299,
+        168,
+        3
+    ],
+    "texts": [
+        {
+            "id": 0,
+            "content": "+ E.",
+            "column_min": 7,
+            "row_min": 14,
+            "column_max": 33,
+            "row_max": 28,
+            "width": 26,
+            "height": 14
+        },
+        {
+            "id": 1,
+            "content": "a kombard",
+            "column_min": 46,
+            "row_min": 14,
+            "column_max": 85,
+            "row_max": 28,
+            "width": 39,
+            "height": 14
+        },
+        {
+            "id": 2,
+            "content": "Near : Current Location",
+            "column_min": 23,
+            "row_min": 39,
+            "column_max": 96,
+            "row_max": 49,
+            "width": 73,
+            "height": 10
+        },
+        {
+            "id": 3,
+            "content": "Select an activity or a feature to launch a",
+            "column_min": 8,
+            "row_min": 56,
+            "column_max": 139,
+            "row_max": 68,
+            "width": 131,
+            "height": 12
+        },
+        {
+            "id": 4,
+            "content": "search",
+            "column_min": 9,
+            "row_min": 67,
+            "column_max": 29,
+            "row_max": 76,
+            "width": 20,
+            "height": 9
+        },
+        {
+            "id": 5,
+            "content": "A",
+            "column_min": 135,
+            "row_min": 86,
+            "column_max": 146,
+            "row_max": 96,
+            "width": 11,
+            "height": 10
+        },
+        {
+            "id": 6,
+            "content": "Kid Friendly",
+            "column_min": 29,
+            "row_min": 112,
+            "column_max": 66,
+            "row_max": 122,
+            "width": 37,
+            "height": 10
+        },
+        {
+            "id": 7,
+            "content": "Dog Friendly",
+            "column_min": 28,
+            "row_min": 131,
+            "column_max": 70,
+            "row_max": 144,
+            "width": 42,
+            "height": 13
+        },
+        {
+            "id": 8,
+            "content": "Wheelchair Friendly",
+            "column_min": 29,
+            "row_min": 152,
+            "column_max": 91,
+            "row_max": 165,
+            "width": 62,
+            "height": 13
+        },
+        {
+            "id": 9,
+            "content": "qwertyu",
+            "column_min": 5,
+            "row_min": 176,
+            "column_max": 111,
+            "row_max": 198,
+            "width": 106,
+            "height": 22
+        },
+        {
+            "id": 10,
+            "content": "sdfghjkl",
+            "column_min": 31,
+            "row_min": 206,
+            "column_max": 152,
+            "row_max": 220,
+            "width": 121,
+            "height": 14
+        },
+        {
+            "id": 11,
+            "content": "zxcvbnm",
+            "column_min": 30,
+            "row_min": 229,
+            "column_max": 137,
+            "row_max": 249,
+            "width": 107,
+            "height": 20
+        },
+        {
+            "id": 12,
+            "content": "a",
+            "column_min": 12,
+            "row_min": 209,
+            "column_max": 17,
+            "row_max": 217,
+            "width": 5,
+            "height": 8
+        },
+        {
+            "id": 13,
+            "content": "+",
+            "column_min": 7,
+            "row_min": 233,
+            "column_max": 14,
+            "row_max": 242,
+            "width": 7,
+            "height": 9
+        },
+        {
+            "id": 14,
+            "content": "7122",
+            "column_min": 6,
+            "row_min": 259,
+            "column_max": 18,
+            "row_max": 268,
+            "width": 12,
+            "height": 9
+        }
+    ]
+}

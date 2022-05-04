@@ -1,0 +1,320 @@
+{
+    "compos": [
+        {
+            "id": 0,
+            "class": "Compo",
+            "height": 8,
+            "width": 445,
+            "position": {
+                "column_min": 0,
+                "row_min": 81,
+                "column_max": 445,
+                "row_max": 89
+            }
+        },
+        {
+            "id": 1,
+            "class": "Compo",
+            "height": 57,
+            "width": 39,
+            "position": {
+                "column_min": 91,
+                "row_min": 97,
+                "column_max": 130,
+                "row_max": 154
+            }
+        },
+        {
+            "id": 2,
+            "class": "Compo",
+            "height": 21,
+            "width": 17,
+            "position": {
+                "column_min": 15,
+                "row_min": 114,
+                "column_max": 32,
+                "row_max": 135
+            }
+        },
+        {
+            "id": 3,
+            "class": "Compo",
+            "height": 606,
+            "width": 76,
+            "position": {
+                "column_min": 354,
+                "row_min": 117,
+                "column_max": 430,
+                "row_max": 723
+            }
+        },
+        {
+            "id": 4,
+            "class": "Compo",
+            "height": 54,
+            "width": 52,
+            "position": {
+                "column_min": 85,
+                "row_min": 179,
+                "column_max": 137,
+                "row_max": 233
+            }
+        },
+        {
+            "id": 5,
+            "class": "Compo",
+            "height": 54,
+            "width": 52,
+            "position": {
+                "column_min": 85,
+                "row_min": 257,
+                "column_max": 137,
+                "row_max": 311
+            }
+        },
+        {
+            "id": 6,
+            "class": "Compo",
+            "height": 53,
+            "width": 52,
+            "position": {
+                "column_min": 85,
+                "row_min": 339,
+                "column_max": 137,
+                "row_max": 392
+            }
+        },
+        {
+            "id": 7,
+            "class": "Compo",
+            "height": 52,
+            "width": 51,
+            "position": {
+                "column_min": 85,
+                "row_min": 419,
+                "column_max": 136,
+                "row_max": 471
+            }
+        },
+        {
+            "id": 8,
+            "class": "Compo",
+            "height": 52,
+            "width": 52,
+            "position": {
+                "column_min": 85,
+                "row_min": 499,
+                "column_max": 137,
+                "row_max": 551
+            }
+        },
+        {
+            "id": 9,
+            "class": "Compo",
+            "height": 52,
+            "width": 52,
+            "position": {
+                "column_min": 85,
+                "row_min": 579,
+                "column_max": 137,
+                "row_max": 631
+            }
+        },
+        {
+            "id": 10,
+            "class": "Compo",
+            "height": 53,
+            "width": 52,
+            "position": {
+                "column_min": 85,
+                "row_min": 658,
+                "column_max": 137,
+                "row_max": 711
+            }
+        },
+        {
+            "id": 11,
+            "class": "Compo",
+            "height": 33,
+            "width": 29,
+            "position": {
+                "column_min": 80,
+                "row_min": 754,
+                "column_max": 109,
+                "row_max": 787
+            }
+        },
+        {
+            "id": 12,
+            "class": "Compo",
+            "height": 34,
+            "width": 34,
+            "position": {
+                "column_min": 204,
+                "row_min": 753,
+                "column_max": 238,
+                "row_max": 787
+            }
+        },
+        {
+            "id": 13,
+            "class": "Compo",
+            "height": 31,
+            "width": 31,
+            "position": {
+                "column_min": 330,
+                "row_min": 755,
+                "column_max": 361,
+                "row_max": 786
+            }
+        },
+        {
+            "id": 14,
+            "class": "Text",
+            "height": 25,
+            "width": 92,
+            "position": {
+                "column_min": 29,
+                "row_min": 46,
+                "column_max": 121,
+                "row_max": 71
+            },
+            "text_content": "SPEED DIAL"
+        },
+        {
+            "id": 15,
+            "class": "Text",
+            "height": 25,
+            "width": 72,
+            "position": {
+                "column_min": 188,
+                "row_min": 46,
+                "column_max": 260,
+                "row_max": 71
+            },
+            "text_content": "RECENTS"
+        },
+        {
+            "id": 16,
+            "class": "Text",
+            "height": 25,
+            "width": 87,
+            "position": {
+                "column_min": 327,
+                "row_min": 45,
+                "column_max": 414,
+                "row_max": 70
+            },
+            "text_content": "CONTACTS"
+        },
+        {
+            "id": 17,
+            "class": "Text",
+            "height": 27,
+            "width": 104,
+            "position": {
+                "column_min": 148,
+                "row_min": 108,
+                "column_max": 252,
+                "row_max": 135
+            },
+            "text_content": "Chris Martin"
+        },
+        {
+            "id": 18,
+            "class": "Text",
+            "height": 28,
+            "width": 107,
+            "position": {
+                "column_min": 148,
+                "row_min": 186,
+                "column_max": 255,
+                "row_max": 214
+            },
+            "text_content": "Chris Pestell"
+        },
+        {
+            "id": 19,
+            "class": "Text",
+            "height": 24,
+            "width": 105,
+            "position": {
+                "column_min": 147,
+                "row_min": 268,
+                "column_max": 252,
+                "row_max": 292
+            },
+            "text_content": "Chris Sewell"
+        },
+        {
+            "id": 20,
+            "class": "Text",
+            "height": 27,
+            "width": 126,
+            "position": {
+                "column_min": 148,
+                "row_min": 349,
+                "column_max": 274,
+                "row_max": 376
+            },
+            "text_content": "Christian Drew"
+        },
+        {
+            "id": 21,
+            "class": "Text",
+            "height": 27,
+            "width": 134,
+            "position": {
+                "column_min": 148,
+                "row_min": 427,
+                "column_max": 282,
+                "row_max": 454
+            },
+            "text_content": "Christian Harris"
+        },
+        {
+            "id": 22,
+            "class": "Text",
+            "height": 28,
+            "width": 140,
+            "position": {
+                "column_min": 148,
+                "row_min": 507,
+                "column_max": 288,
+                "row_max": 535
+            },
+            "text_content": "Christina Slatter"
+        },
+        {
+            "id": 23,
+            "class": "Text",
+            "height": 29,
+            "width": 188,
+            "position": {
+                "column_min": 145,
+                "row_min": 586,
+                "column_max": 333,
+                "row_max": 615
+            },
+            "text_content": "Claire Eaton Whitfield"
+        },
+        {
+            "id": 24,
+            "class": "Text",
+            "height": 30,
+            "width": 103,
+            "position": {
+                "column_min": 148,
+                "row_min": 668,
+                "column_max": 251,
+                "row_max": 698
+            },
+            "text_content": "Cliff Joseph"
+        }
+    ],
+    "img_shape": [
+        800,
+        446,
+        3
+    ]
+}

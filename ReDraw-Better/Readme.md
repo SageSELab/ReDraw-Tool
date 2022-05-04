@@ -3,7 +3,7 @@
 
 <img src="https://sagelab.io/images/sage-logo.png" style="height:15px;width:15px;" /> SAGE Research Lab
 
-> From the three main steps of Design UI, Implementing UI, and Testing UI,  ReDraw majorly focuses on automatically Implementing UI for android applications. 
+> To be changed <===> From the three main steps of Design UI, Implementing UI, and Testing UI,  ReDraw majorly focuses on automatically Implementing UI for android applications. 
 
 ## Approach Over-View
 
@@ -25,9 +25,22 @@ source venv/bin/activate
 
 # Install the requirements for the project into the virtual environment
 pip install -r requirements.txt
-```
-## Part 1: Model training for Sub-Component Classification.
+``` 
+## Part 1: Setting up UIED model.
+The first step in the process for ReDraw-Better is to identify sub-components taking an image/ images as input. For Identifying sub-components we have several approached form the tabel below we can see that UIED performs the best.
 
+<img src="https://github.com/SageSELab/ReDraw-Tool/blob/main/ReDraw-Better/images/model_F1.JPG" />
+
+We have performed several changes in the UIED repository to make it compactable with our code. We apply UIED to the input image and detect all the sub-componets in the image, then we crop all the sub-components and save them in a seperate folder along with a json file storing it's coordinates. This folder is been later used to generate XML file.
+
+You can add all the input images in the UIED/data/input folder. The output of the UIED will be saved in UIED/data/output/ReDrawModel/
+
+```
+python run_UIED.py
+```
+
+## Part 2: Model training for Sub-Component Classification.
+Part 2 focuses on the following: Now before generating XML file, we need to train a CNN model for classficiaiton of detected sub-components. 
 ### Dataset
 We are using ReDraw Dataset which can be directly be available from [Link](https://zenodo.org/record/2530277#.YnF9StrMK01). [https://zenodo.org/record/2530277#.YnF9StrMK01]
 ```
@@ -73,83 +86,9 @@ Hyper-Parameters while model training:
 python train_model.py
 ```
 
-## Part 2: Using Trained Model for predicting output on images of sub-components obtained from UIED Model.
+## Part 3: Using Trained Model for predicting output on images of sub-components obtained from UIED Model.
 
 The first step when we get an image of an android UI is to detect sub-component. For sub-component detection we compare a couple of models and used UIED as it performed the best. 
-
-Want to contribute? Great!
-
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantaneously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-
-```sh
-node app
-```
-
-Second Tab:
-
-```sh
-gulp watch
-```
-
-(optional) Third:
-
-```sh
-karma test
-```
-
-#### Building for source
-
-For production release:
-
-```sh
-gulp build --prod
-```
-
-Generating pre-built zip archives for distribution:
-
-```sh
-gulp build dist --prod
-```
-
-## Docker
-
-Dillinger is very easy to install and deploy in a Docker container.
-
-By default, the Docker will expose port 8080, so change this within the
-Dockerfile if necessary. When ready, simply use the Dockerfile to
-build the image.
-
-```sh
-cd dillinger
-docker build -t <youruser>/dillinger:${package.json.version} .
-```
-
-This will create the dillinger image and pull in the necessary dependencies.
-Be sure to swap out `${package.json.version}` with the actual
-version of Dillinger.
-
-Once done, run the Docker image and map the port to whatever you wish on
-your host. In this example, we simply map port 8000 of the host to
-port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
-
-```sh
-docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger <youruser>/dillinger:${package.json.version}
-```
-
-> Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
-
-Verify the deployment by navigating to your server address in
-your preferred browser.
-
-```sh
-127.0.0.1:8000
-```
-
 
 ## Project Structure (For reference only)
 ```bash
@@ -163,3 +102,4 @@ ReDraw-Better/
 │ │── preprocessing.py
 │ │── train_model.py
 ├── Dataset/
+├── UIED/

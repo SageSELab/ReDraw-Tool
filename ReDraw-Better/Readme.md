@@ -36,7 +36,7 @@ We have performed several changes in the UIED repository to make it compactable 
 You can add all the input images in the UIED/data/input folder. The output of the UIED will be saved in UIED/data/output/ReDrawModel/
 
 ```
-python run_UIED.py
+python run_single.py
 ```
 
 ## Part 2: Model training for Sub-Component Classification.
@@ -88,7 +88,10 @@ python train_model.py
 
 ## Part 3: Using Trained Model for predicting output on images of sub-components obtained from UIED Model.
 
-The first step when we get an image of an android UI is to detect sub-component. For sub-component detection we compare a couple of models and used UIED as it performed the best. 
+Once the model is been trained we have created a google colab notebook which can be used to generate XML file.
+
+[Link](https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing)
+https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing
 
 ## Project Structure (For reference only)
 ```bash

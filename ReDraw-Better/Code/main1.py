@@ -65,75 +65,8 @@ def preprocess_attrib(tree):
             i.attrib["centerX"]=str(centerX)
             i.attrib["centerY"]=str(centerY)
             i.attrib["bounds"]=bounds
+            i.attrib["resource-id"]=""
     return tree           
-
-def compareComponentByComponent(acceptableTree_level_nodes, input):
-    '''
-    Input are the leaf nodes of target tree
-    copied from neighborhood.m
-    
-    Check what happens when disappearing list is completely empty
-    '''
-    score = 0
-    #curExample = acceptableTree.leafNodes
-    #disappearingList = acceptableTree.leafNodes
-    curExample = [elem for elem in acceptableTree_level_nodes]
-    disappearingList = [elem for elem in acceptableTree_level_nodes]
-    common_nodes=[]
-    #if root of target tree is reached
-    if 'centerX' not in input[0].attrib.keys():
-        print("Locha")
-        return input, score, 0
-    #if root of given tree is reached
-    if 'centerX' not in disappearingList[0].attrib.keys():
-        print("Locha2")
-        return [], score, 1
-    
-    if isinstance(disappearingList, list)==False:
-        print(disappearingList)
-        print("Locha2")
-        return [], score, 1
-    
-    for j in range(len(input)):
-        #if all the nodes(of particular level) of the received tree is dealt with, stop the execution.
-        if len(disappearingList)==0:
-            break
-        #we use the built in distance function from matlab
-        #distMat = [input[j].centerX, disappearingList[1].centerX, input[j].centerY, disappearingList[1].centerY]
-        curMin = math.dist((float(input[j].attrib["centerX"]),float(input[j].attrib["centerY"])),(float(disappearingList[0].attrib["centerX"]),float(disappearingList[0].attrib["centerY"])))#(distMat, "euclidean")#caluclate distance 
-        ndx=0
-        for k in range(1,len(disappearingList)):
-            #distMat = [input[j].centerX, disappearingList[k].centerX, input[j].centerY, disappearingList[k].centerY] 
-            curDist = math.dist((float(input[j].attrib["centerX"]),float(input[j].attrib["centerY"])),(float(disappearingList[k].attrib["centerX"]),float(disappearingList[k].attrib["centerY"])))
-            #curMin = min(curMin, curDist)
-            if curDist < curMin:
-                curMin = curDist
-                ndx=k
-            
-        #make these two components partners
-        # find the index of leaf nodes that are equal
-        loc=[i for i in range(len(curExample)) if node_eq(curExample[i],disappearingList[ndx])]
-
-        #loc = find(curExample.equals(disappearingList(ndx)))
-        #some Trees have two copies of the same component, just
-        #take one of them
-        """
-        if len(loc) > 1:
-            loc = loc[1]
-        else:
-            loc=loc[0]
-        """
-        loc=loc[0]
-        #input[j].attrib["partner"] = curExample[loc]
-        #curExample[loc].attrib["partner"] = input[j]
-        #acceptableTree_level_nodes[loc] = curExample[loc]
-        score = score + computeIOU(input[j], curExample[loc])
-        #remove the one we matched with
-        #print(score)
-        common_nodes.append(input[j])
-        disappearingList.pop(ndx)
-    #print("Score",score)
-    return common_nodes, score, 0
 
 def get_leafs(root, list_=[]):
     for child in list(root):
@@ -156,25 +89,6 @@ def new_level_order(root):
         level+=1
     return list_
     
-def level_order(list_=[],roots=None,root=None):
-   
-    if roots==None:
-        list_.append(list(root))
-        list_=level_order(list_,roots=list(root))
-    else:
-        new_list=[]
-        for root in roots:            
-            for child in list(root):
-                if list(child)!=[]:
-                    new_list.extend(list(child))
-        
-        if new_list!=[]:
-            list_.append(new_list)
-            list_=level_order(list_,roots=new_list)
-        else:
-            return list_
-    return list_
-
 def computeIOU(firstNode,secondNode):
     '''
     Takes two nodes and finds iou between them
@@ -207,72 +121,6 @@ def computeIOU(firstNode,secondNode):
     iou_score = numpy.sum(intersection) / numpy.sum(union)
     #print("IoU:",iou_score)
     return iou_score
-
-def add_to_tree(target_tree,common_nodes):
-    '''
-        Returns the nodes that are to be checked now
-    '''
-    #new_tree=ET.ElementTree()
-    #root.insert(-1, i)
-    root=target_tree.getroot()
-    #detach these leaf nodes
-    for i in common_nodes:
-        remove_common_nodes(root,i)
-    return get_leafs(root) #pass the remaining nodes
-
-def remove_common_nodes(root,i):
-    for child in list(root):
-        if list(child)==[]:
-            if node_eq(child,i)==True:
-                root.remove(child)
-                break
-        else:
-            remove_common_nodes(child,i)
-
-def compatible(parent,child):
-    '''
-    parent is new node, and child is old nodes
-    '''
-    if parent.attrib["xStart"] >= child.attrib["xStart"] \
-            and parent.attrib["yStart"] >= child.attrib["yStart"]\
-                and parent.attrib["xEnd"] <= child.attrib["xEnd"]\
-                        and parent.attrib["yEnd"] <= child.attrib["yEnd"]:
-                            return True
-    #add other matching possibilities
-    else:
-        return False
-
-def correct_tree(tree,new_nodes,isroot):
-    '''Find the bounds of the new nodes, and get the bounds of previous level nodes.
-    compare them and save it as it's parent'''
-    if tree.getroot()==None:
-        root = ET.Element('dummy')
-        for i in new_nodes:
-            root.append(i)
-        tree._setroot(root)
-    elif isroot==1:
-        #can be single node too, check if it is root of file tree?
-        tree.getroot().tag=new_nodes[0].tag
-        print("tag",tree.getroot().tag)
-        tree.getroot().attrib = new_nodes[0].attrib
-    else:
-        levels = level_order([[tree.getroot()]],roots=None,root=tree.getroot())
-        root=tree.getroot()
-        previous_layer_nodes = levels[1]#second most layer always, as first is root
-        
-        for previous_layer_node_i in previous_layer_nodes:
-            for new_node_j in new_nodes:
-                if compatible(new_node_j, previous_layer_node_i )==True:
-                    z=new_node_j.attrib
-                    new_node_j.clear()#removing all previous connections
-                    new_node_j.attrib=z
-
-                    root.remove(previous_layer_node_i)#detaching it from root
-                    root.append(new_node_j)#attach new node
-                    new_node_j.append(previous_layer_node_i)#attach it to new node
-                    break
-
-    return tree
 
 def getIOUScore(dataset_leaves, target_leaves):
     score = 0
@@ -380,7 +228,26 @@ def copy_hierarchy(new_tree,common_nodes,hierarchy_nodes):
     return new_tree
 
 def save_tree(new_tree):
-    #ET.dump(new_tree)
+    for i in tree.iter():
+        if "class" in i.attrib.keys():
+
+            i.attrib["package"] = "com.pandora.android" 
+            z=i.attrib
+            ord_list = 	["bounds","checkable","checked", "class","clickable", "content-desc", "enabled", "focusable", "focused", "index","long-clickable", "package","password", "resource-id","scrollable","selected","text"]
+
+            res = dict()
+            for key in ord_list:
+                res[key] = z[key]
+            i.attrib = res            
+            l=i.attrib["bounds"]
+
+            if len(l)==4:
+                s=""
+                j=0
+                while(j<len(l)):
+                    s=s+'['+l[j+1] + ','+ l[j]+']'
+                    j+=2
+                i.attrib["bounds"]=s
     f = open('employees.xml', "wb")
     new_tree.write(f)
     print("file saved!")
@@ -457,10 +324,10 @@ def main(target_xml,xml_folder):
     current_level=0
     #Compare nodes of target tree with the other files, in a level order
     current_nodes = get_leafs(target_tree.getroot(),[])#leafNodes
-    #counter=0
+    counter=0
     while(flag!=True):
         #print(counter, len(current_nodes))
-        #counter+=1
+        counter+=1
         iou_scores = {file: 0 for file in fileList}
         for files in fileList:
             '''compare this tree objects with target tree
@@ -469,7 +336,7 @@ def main(target_xml,xml_folder):
             tree = xml_to_tree(files)
             
             if current_level!=0:
-                levels=new_level_order(new_tree.getroot())
+                levels=new_level_order(tree.getroot())#//changed here
                 #levels = level_order([[new_tree.getroot()]],roots=None,root=new_tree.getroot())
                 #get all nodes levels of the tree
                 dataset_leafs = levels[current_level]
@@ -484,7 +351,7 @@ def main(target_xml,xml_folder):
             iou_scores[files] = score
             #when you reach root node of files
 
-        
+        print("Completed looking at files:",counter,"times")
         #Issue here---> iou scores are same for many files at a time, iou scores are 0 for all files too.
         best_tree_file = max(iou_scores, key=iou_scores.get)
         #get the common nodes with this tree
@@ -495,12 +362,14 @@ def main(target_xml,xml_folder):
         #update the target tree with the new trees objects
 
         if current_level!=0:
-            levels = new_level_order(new_tree.getroot())
+            levels = new_level_order(tree.getroot())
             dataset_leafs = levels[current_level]
         else:
             dataset_leafs=get_leafs(tree.getroot(),[])
-        
         common_nodes,hierarchy_nodes = compareComponentByComponent2(tree,dataset_leafs, current_nodes)
+        
+       
+        #break
         #print("common nodes",len(common_nodes))
         #print("hierarchy_nodes",len(hierarchy_nodes))
         hierarchy_nodes=preprocess_hierarchy_nodes(hierarchy_nodes)
@@ -519,17 +388,19 @@ def main(target_xml,xml_folder):
         '''
         #print("intersection between common_nodes and current_nodes",set(current_nodes).intersection(set(common_nodes)))
         #introduces more leaf nodes
-
+        
         new_tree = copy_hierarchy(new_tree,common_nodes,hierarchy_nodes)
+
         #print("leaves after",len(get_leafs(new_tree.getroot(),[])))
         #save_tree(new_tree)
         if current_nodes==[]:
-            #print("Completed level:",current_level)
+            print("Completed level:",current_level)
             current_level+=1 
             #levels = level_order([[new_tree.getroot()]],roots=None,root=new_tree.getroot())
             #if there are no more levels present:
             #if len(levels)==current_level:
             #    return new_tree
+            new_tree = copy_hierarchy(new_tree,common_nodes,hierarchy_nodes)
             current_nodes=list(new_tree.getroot()) 
             #levels[current_level]
             #new_tree = correct_tree_levels(new_tree)
@@ -537,7 +408,7 @@ def main(target_xml,xml_folder):
             #break
             
             #print("current_level",current_level)
-        if current_level==3:
+        if current_level==1:
             flag=True
     return new_tree
 
@@ -547,9 +418,8 @@ def final_preprocess(tree):
             if type(v)=="float":
                 i.set(k, str(v))
 
-
 xml_file_name="../1565.jpg.xml"
-xml_folder="../XmlFiles/"
+xml_folder="../XmlFiles2/"
 
 tree=main(xml_file_name,xml_folder)
 #print_(tree)

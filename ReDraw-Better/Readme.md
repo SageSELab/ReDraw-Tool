@@ -102,6 +102,22 @@ python generate_xml.py
 [Link](https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing)
 https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing
 
+## Part 4: Using Generated XML to construct hierarchy of sub-components.
+
+The previously generated xml will provide an xml containing all sub-components as child nodes. Follow the steps below and run the command.
+Steps:
+1. Use the generated xml file from part 3 on line no, 485
+2. Replace the xml dataset folder on line no, 486
+3. Install requirements from requirements.txt
+
+```
+python main1.py
+```
+
+[Link](https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing)
+https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing
+
+
 ## Project Structure (For reference only)
 ```bash
 ReDraw-Better/
@@ -113,6 +129,7 @@ ReDraw-Better/
 │ │ └──checkpoint
 │ │── preprocessing.py
 │ │── train_model.py
+| |── train_model.py
 │ │── Generate_XML.ipynb
 ├── Dataset/
 ├── UIED/

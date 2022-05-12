@@ -60,6 +60,7 @@ if __name__ == '__main__':
 
     #input_path_img = 'data/input/Full_Image5.png'
     #input_path_img_folder = ['data/input/Full_Image5.png','data/input/Full_Image4.png','data/input/Full_Image3.png','data/input/Full_Image2.png','data/input/Full_Image1.png']
+    #input_path_img_folder = ['data/input/Dropbox.png']
     for input_path_img in input_path_img_folder:
         output_root = 'data/output'
         resized_height = resize_height_by_longest_edge(input_path_img, resize_length=800)
@@ -93,11 +94,11 @@ if __name__ == '__main__':
             name = input_path_img.split('/')[-1][:-4]
             compo_path = pjoin(output_root, 'ip', str(name) + '.json')
             ocr_path = pjoin(output_root, 'ocr', str(name) + '.json')
-            merge.merge(input_path_img, compo_path, ocr_path, pjoin(output_root, 'merge'),
+            board, components=merge.merge(input_path_img, compo_path, ocr_path, pjoin(output_root, 'merge'),
                         is_remove_bar=key_params['remove-bar'], is_paragraph=key_params['merge-line-to-paragraph'], show=True)
 
         if is_redraw:
             import crop
             image_name = input_path_img.split('/')[-1]
             image_name=image_name.split('.')[0]
-            crop.crop_resize(image_name)
+            crop.crop_resize(image_name,components)

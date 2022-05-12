@@ -1,0 +1,109 @@
+{
+    "img_shape": [
+        1920,
+        1200,
+        3
+    ],
+    "texts": [
+        {
+            "id": 0,
+            "content": "53",
+            "column_min": 194,
+            "row_min": 19,
+            "column_max": 236,
+            "row_max": 51,
+            "width": 42,
+            "height": 32
+        },
+        {
+            "id": 1,
+            "content": "1:58",
+            "column_min": 1084,
+            "row_min": 19,
+            "column_max": 1170,
+            "row_max": 55,
+            "width": 86,
+            "height": 36
+        },
+        {
+            "id": 2,
+            "content": "Kygo Radio",
+            "column_min": 194,
+            "row_min": 120,
+            "column_max": 446,
+            "row_max": 182,
+            "width": 252,
+            "height": 62
+        },
+        {
+            "id": 3,
+            "content": "Helena",
+            "column_min": 532,
+            "row_min": 381,
+            "column_max": 706,
+            "row_max": 529,
+            "width": 174,
+            "height": 148
+        },
+        {
+            "id": 4,
+            "content": "CLOUD NINE",
+            "column_min": 479,
+            "row_min": 1111,
+            "column_max": 749,
+            "row_max": 1154,
+            "width": 270,
+            "height": 43
+        },
+        {
+            "id": 5,
+            "content": "Firestone Feat . Conrad Sewell",
+            "column_min": 78,
+            "row_min": 1281,
+            "column_max": 865,
+            "row_max": 1347,
+            "width": 787,
+            "height": 66
+        },
+        {
+            "id": 6,
+            "content": "Kygo",
+            "column_min": 77,
+            "row_min": 1371,
+            "column_max": 189,
+            "row_max": 1427,
+            "width": 112,
+            "height": 56
+        },
+        {
+            "id": 7,
+            "content": "0:04",
+            "column_min": 49,
+            "row_min": 1539,
+            "column_max": 131,
+            "row_max": 1579,
+            "width": 82,
+            "height": 40
+        },
+        {
+            "id": 8,
+            "content": "-4 : 29",
+            "column_min": 1068,
+            "row_min": 1543,
+            "column_max": 1158,
+            "row_max": 1578,
+            "width": 90,
+            "height": 35
+        },
+        {
+            "id": 9,
+            "content": "DDI",
+            "column_min": 972,
+            "row_min": 1652,
+            "column_max": 1045,
+            "row_max": 1703,
+            "width": 73,
+            "height": 51
+        }
+    ]
+}

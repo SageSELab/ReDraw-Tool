@@ -1,0 +1,139 @@
+{
+    "img_shape": [
+        1920,
+        1200,
+        3
+    ],
+    "texts": [
+        {
+            "id": 0,
+            "content": "53",
+            "column_min": 113,
+            "row_min": 19,
+            "column_max": 155,
+            "row_max": 50,
+            "width": 42,
+            "height": 31
+        },
+        {
+            "id": 1,
+            "content": "2:32",
+            "column_min": 1083,
+            "row_min": 19,
+            "column_max": 1171,
+            "row_max": 54,
+            "width": 88,
+            "height": 35
+        },
+        {
+            "id": 2,
+            "content": "Settings",
+            "column_min": 243,
+            "row_min": 125,
+            "column_max": 487,
+            "row_max": 195,
+            "width": 244,
+            "height": 70
+        },
+        {
+            "id": 3,
+            "content": "Speech input",
+            "column_min": 82,
+            "row_min": 289,
+            "column_max": 383,
+            "row_max": 347,
+            "width": 301,
+            "height": 58
+        },
+        {
+            "id": 4,
+            "content": "Data usage",
+            "column_min": 82,
+            "row_min": 436,
+            "column_max": 343,
+            "row_max": 495,
+            "width": 261,
+            "height": 59
+        },
+        {
+            "id": 5,
+            "content": "Offline languages",
+            "column_min": 81,
+            "row_min": 547,
+            "column_max": 491,
+            "row_max": 608,
+            "width": 410,
+            "height": 61
+        },
+        {
+            "id": 6,
+            "content": "Manage translation downloadable",
+            "column_min": 80,
+            "row_min": 618,
+            "column_max": 545,
+            "row_max": 708,
+            "width": 465,
+            "height": 90
+        },
+        {
+            "id": 7,
+            "content": "packages for offline",
+            "column_min": 565,
+            "row_min": 618,
+            "column_max": 970,
+            "row_max": 670,
+            "width": 405,
+            "height": 52
+        },
+        {
+            "id": 8,
+            "content": "Instant camera languages",
+            "column_min": 84,
+            "row_min": 759,
+            "column_max": 687,
+            "row_max": 816,
+            "width": 603,
+            "height": 57
+        },
+        {
+            "id": 9,
+            "content": "Manage",
+            "column_min": 83,
+            "row_min": 826,
+            "column_max": 246,
+            "row_max": 879,
+            "width": 163,
+            "height": 53
+        },
+        {
+            "id": 10,
+            "content": "downloadable translation",
+            "column_min": 249,
+            "row_min": 826,
+            "column_max": 548,
+            "row_max": 920,
+            "width": 299,
+            "height": 94
+        },
+        {
+            "id": 11,
+            "content": "packages for instant",
+            "column_min": 567,
+            "row_min": 826,
+            "column_max": 981,
+            "row_max": 879,
+            "width": 414,
+            "height": 53
+        },
+        {
+            "id": 12,
+            "content": "camera",
+            "column_min": 81,
+            "row_min": 878,
+            "column_max": 232,
+            "row_max": 922,
+            "width": 151,
+            "height": 44
+        }
+    ]
+}

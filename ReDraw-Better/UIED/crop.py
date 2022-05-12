@@ -6,10 +6,48 @@ from tqdm import tqdm
 
 # Global Declarations.
 path="data/output/merge/"
+input_path="data/input/"
 output_path = 'data/output/ReDrawModel/'
+uiautomatorviewer_path = 'data/output/uiautomatorviewer/'
 dim = (299, 299)
 
-def crop_resize(image_name):
+def crop_resize(image_name,components):
+
+	components=components['compos']
+
+	text_ocr={}
+	for text_data in components:
+		if 'text_content' in text_data.keys():
+			position = text_data['position']
+			temp_x1 = position['row_min']
+			temp_y1 = position['column_min']
+			temp_x2 = position['row_max']
+			temp_y2 = position['column_max']
+			text_ocr["["+str(temp_x1)+","+str(temp_y1)+"],["+str(temp_x2)+","+str(temp_y2)+"]"]=text_data['text_content']
+
+	# Create a new directory because it does not exist 
+	isExist = os.path.exists(uiautomatorviewer_path)
+	if not isExist:
+		os.makedirs(uiautomatorviewer_path)
+		print("Creating directory uiautomatorviewer/")
+
+	# creating a copy from input image.
+	processed_image = cv2.imread(path+image_name+'.jpg', cv2.IMREAD_COLOR)
+	processed_shape = processed_image.shape[:2]
+	new_dim=(processed_shape[1],processed_shape[0])
+	
+	# find file from input folder:
+	full_file_name=""
+	for file in os.listdir(input_path):
+		if file.startswith(image_name):
+			full_file_name=file
+			break
+
+	# Writing it to uiautomatorviewer 
+	current_image = cv2.imread(input_path+full_file_name, cv2.IMREAD_COLOR)
+	current_image = cv2.resize(current_image, new_dim, interpolation = cv2.INTER_AREA)
+	cv2.imwrite(uiautomatorviewer_path+image_name+".png", current_image)	
+
 	# Create a new directory because it does not exist 
 	isExist = os.path.exists(output_path)
 	if not isExist:
@@ -51,7 +89,12 @@ def crop_resize(image_name):
 		cv2.imwrite(output_path+image_name+'/'+str(count)+".jpg", cropped_image)	
 
 		# generating json for metadata.
-		json_string[str(count)+".jpg"]="["+str(x1)+","+str(y1)+"],["+str(x2)+","+str(y2)+"]"	
+		current_coordinate="["+str(x1)+","+str(y1)+"],["+str(x2)+","+str(y2)+"]"
+		if(current_coordinate in text_ocr):
+			json_string[str(count)+".jpg"]=[current_coordinate,text_ocr[current_coordinate]]				
+		else:
+			json_string[str(count)+".jpg"]=current_coordinate
+		#json_string[str(count)+".jpg"]=current_coordinate	
 
 		count+=1
 

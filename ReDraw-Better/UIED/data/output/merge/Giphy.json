@@ -1,0 +1,187 @@
+{
+    "compos": [
+        {
+            "id": 0,
+            "class": "Compo",
+            "height": 41,
+            "width": 46,
+            "position": {
+                "column_min": 398,
+                "row_min": 45,
+                "column_max": 444,
+                "row_max": 86
+            }
+        },
+        {
+            "id": 1,
+            "class": "Compo",
+            "height": 30,
+            "width": 27,
+            "position": {
+                "column_min": 20,
+                "row_min": 49,
+                "column_max": 47,
+                "row_max": 79
+            }
+        },
+        {
+            "id": 2,
+            "class": "Compo",
+            "height": 15,
+            "width": 6,
+            "position": {
+                "column_min": 463,
+                "row_min": 58,
+                "column_max": 469,
+                "row_max": 73
+            }
+        },
+        {
+            "id": 3,
+            "class": "Compo",
+            "height": 40,
+            "width": 402,
+            "position": {
+                "column_min": 20,
+                "row_min": 99,
+                "column_max": 422,
+                "row_max": 139
+            }
+        },
+        {
+            "id": 4,
+            "class": "Compo",
+            "height": 40,
+            "width": 42,
+            "position": {
+                "column_min": 433,
+                "row_min": 99,
+                "column_max": 475,
+                "row_max": 139
+            }
+        },
+        {
+            "id": 5,
+            "class": "Compo",
+            "height": 487,
+            "width": 248,
+            "position": {
+                "column_min": 0,
+                "row_min": 249,
+                "column_max": 248,
+                "row_max": 736
+            }
+        },
+        {
+            "id": 6,
+            "class": "Compo",
+            "height": 487,
+            "width": 249,
+            "position": {
+                "column_min": 250,
+                "row_min": 249,
+                "column_max": 499,
+                "row_max": 736
+            },
+            "children": [
+                7
+            ]
+        },
+        {
+            "id": 7,
+            "class": "Compo",
+            "height": 30,
+            "width": 36,
+            "position": {
+                "column_min": 267,
+                "row_min": 250,
+                "column_max": 303,
+                "row_max": 280
+            },
+            "parent": 6
+        },
+        {
+            "id": 8,
+            "class": "Text",
+            "height": 30,
+            "width": 118,
+            "position": {
+                "column_min": 57,
+                "row_min": 47,
+                "column_max": 175,
+                "row_max": 77
+            },
+            "text_content": "GIPHY"
+        },
+        {
+            "id": 9,
+            "class": "Text",
+            "height": 15,
+            "width": 102,
+            "position": {
+                "column_min": 16,
+                "row_min": 159,
+                "column_max": 118,
+                "row_max": 174
+            },
+            "text_content": "TRENDING"
+        },
+        {
+            "id": 10,
+            "class": "Text",
+            "height": 17,
+            "width": 113,
+            "position": {
+                "column_min": 154,
+                "row_min": 156,
+                "column_max": 267,
+                "row_max": 173
+            },
+            "text_content": "REACTIONS"
+        },
+        {
+            "id": 11,
+            "class": "Text",
+            "height": 17,
+            "width": 88,
+            "position": {
+                "column_min": 305,
+                "row_min": 157,
+                "column_max": 393,
+                "row_max": 174
+            },
+            "text_content": "ACTIONS"
+        },
+        {
+            "id": 12,
+            "class": "Text",
+            "height": 16,
+            "width": 60,
+            "position": {
+                "column_min": 430,
+                "row_min": 158,
+                "column_max": 490,
+                "row_max": 174
+            },
+            "text_content": "EMOTI"
+        },
+        {
+            "id": 13,
+            "class": "Text",
+            "height": 21,
+            "width": 415,
+            "position": {
+                "column_min": 23,
+                "row_min": 218,
+                "column_max": 438,
+                "row_max": 239
+            },
+            "text_content": "The newest , most trending gifs on the interwebs"
+        }
+    ],
+    "img_shape": [
+        800,
+        500,
+        3
+    ]
+}

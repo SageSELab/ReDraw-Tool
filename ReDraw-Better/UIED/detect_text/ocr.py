@@ -23,7 +23,7 @@ def Google_OCR_makeImageData(imgpath):
 
 
 def ocr_detection_google(imgpath):
-    start = time.clock()
+    start = time.time()
     url = 'https://vision.googleapis.com/v1/images:annotate'
     api_key = 'AIzaSyDUc4iOUASJQYkVwSomIArTKhE2C6bHK8U'             # *** Replace with your own Key ***
     imgdata = Google_OCR_makeImageData(imgpath)

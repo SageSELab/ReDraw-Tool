@@ -1,0 +1,237 @@
+{
+    "compos": [
+        {
+            "id": 0,
+            "class": "Compo",
+            "height": 17,
+            "width": 19,
+            "position": {
+                "column_min": 28,
+                "row_min": 59,
+                "column_max": 47,
+                "row_max": 76
+            }
+        },
+        {
+            "id": 1,
+            "class": "Compo",
+            "height": 16,
+            "width": 15,
+            "position": {
+                "column_min": 440,
+                "row_min": 59,
+                "column_max": 455,
+                "row_max": 75
+            }
+        },
+        {
+            "id": 2,
+            "class": "Compo",
+            "height": 18,
+            "width": 7,
+            "position": {
+                "column_min": 459,
+                "row_min": 62,
+                "column_max": 466,
+                "row_max": 80
+            }
+        },
+        {
+            "id": 3,
+            "class": "Block",
+            "height": 410,
+            "width": 449,
+            "position": {
+                "column_min": 26,
+                "row_min": 110,
+                "column_max": 475,
+                "row_max": 520
+            },
+            "children": [
+                4,
+                5
+            ]
+        },
+        {
+            "id": 4,
+            "class": "Compo",
+            "height": 62,
+            "width": 62,
+            "position": {
+                "column_min": 226,
+                "row_min": 163,
+                "column_max": 288,
+                "row_max": 225
+            },
+            "parent": 3
+        },
+        {
+            "id": 5,
+            "class": "Compo",
+            "height": 224,
+            "width": 431,
+            "position": {
+                "column_min": 34,
+                "row_min": 273,
+                "column_max": 465,
+                "row_max": 497
+            },
+            "parent": 3
+        },
+        {
+            "id": 6,
+            "class": "Compo",
+            "height": 22,
+            "width": 6,
+            "position": {
+                "column_min": 362,
+                "row_min": 539,
+                "column_max": 368,
+                "row_max": 561
+            }
+        },
+        {
+            "id": 7,
+            "class": "Compo",
+            "height": 7,
+            "width": 16,
+            "position": {
+                "column_min": 241,
+                "row_min": 607,
+                "column_max": 257,
+                "row_max": 614
+            }
+        },
+        {
+            "id": 8,
+            "class": "Compo",
+            "height": 23,
+            "width": 21,
+            "position": {
+                "column_min": 49,
+                "row_min": 689,
+                "column_max": 70,
+                "row_max": 712
+            }
+        },
+        {
+            "id": 9,
+            "class": "Compo",
+            "height": 22,
+            "width": 21,
+            "position": {
+                "column_min": 142,
+                "row_min": 689,
+                "column_max": 163,
+                "row_max": 711
+            }
+        },
+        {
+            "id": 10,
+            "class": "Compo",
+            "height": 22,
+            "width": 20,
+            "position": {
+                "column_min": 238,
+                "row_min": 689,
+                "column_max": 258,
+                "row_max": 711
+            }
+        },
+        {
+            "id": 11,
+            "class": "Compo",
+            "height": 20,
+            "width": 17,
+            "position": {
+                "column_min": 324,
+                "row_min": 690,
+                "column_max": 341,
+                "row_max": 710
+            }
+        },
+        {
+            "id": 12,
+            "class": "Text",
+            "height": 25,
+            "width": 105,
+            "position": {
+                "column_min": 80,
+                "row_min": 50,
+                "column_max": 185,
+                "row_max": 75
+            },
+            "text_content": "Kygo Radio"
+        },
+        {
+            "id": 13,
+            "class": "Text",
+            "height": 28,
+            "width": 328,
+            "position": {
+                "column_min": 32,
+                "row_min": 533,
+                "column_max": 360,
+                "row_max": 561
+            },
+            "text_content": "Firestone Feat . Conrad Sewell"
+        },
+        {
+            "id": 14,
+            "class": "Text",
+            "height": 23,
+            "width": 46,
+            "position": {
+                "column_min": 32,
+                "row_min": 571,
+                "column_max": 78,
+                "row_max": 594
+            },
+            "text_content": "Kygo"
+        },
+        {
+            "id": 15,
+            "class": "Text",
+            "height": 16,
+            "width": 34,
+            "position": {
+                "column_min": 20,
+                "row_min": 641,
+                "column_max": 54,
+                "row_max": 657
+            },
+            "text_content": "0:04"
+        },
+        {
+            "id": 16,
+            "class": "Text",
+            "height": 15,
+            "width": 37,
+            "position": {
+                "column_min": 445,
+                "row_min": 642,
+                "column_max": 482,
+                "row_max": 657
+            },
+            "text_content": "-4 : 29"
+        },
+        {
+            "id": 17,
+            "class": "Text",
+            "height": 21,
+            "width": 30,
+            "position": {
+                "column_min": 405,
+                "row_min": 688,
+                "column_max": 435,
+                "row_max": 709
+            },
+            "text_content": "DDI"
+        }
+    ],
+    "img_shape": [
+        800,
+        500,
+        3
+    ]
+}

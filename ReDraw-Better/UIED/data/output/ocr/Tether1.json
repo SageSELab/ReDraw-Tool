@@ -1,0 +1,89 @@
+{
+    "img_shape": [
+        1920,
+        1200,
+        3
+    ],
+    "texts": [
+        {
+            "id": 0,
+            "content": "53",
+            "column_min": 33,
+            "row_min": 21,
+            "column_max": 75,
+            "row_max": 58,
+            "width": 42,
+            "height": 37
+        },
+        {
+            "id": 1,
+            "content": "The",
+            "column_min": 202,
+            "row_min": 16,
+            "column_max": 237,
+            "row_max": 59,
+            "width": 35,
+            "height": 43
+        },
+        {
+            "id": 2,
+            "content": "1:47",
+            "column_min": 1083,
+            "row_min": 19,
+            "column_max": 1171,
+            "row_max": 58,
+            "width": 88,
+            "height": 39
+        },
+        {
+            "id": 3,
+            "content": "Device",
+            "column_min": 507,
+            "row_min": 103,
+            "column_max": 735,
+            "row_max": 183,
+            "width": 228,
+            "height": 80
+        },
+        {
+            "id": 4,
+            "content": "+",
+            "column_min": 435,
+            "row_min": 565,
+            "column_max": 463,
+            "row_max": 595,
+            "width": 28,
+            "height": 30
+        },
+        {
+            "id": 5,
+            "content": "!",
+            "column_min": 594,
+            "row_min": 684,
+            "column_max": 611,
+            "row_max": 811,
+            "width": 17,
+            "height": 127
+        },
+        {
+            "id": 6,
+            "content": "No Device Found",
+            "column_min": 393,
+            "row_min": 946,
+            "column_max": 805,
+            "row_max": 992,
+            "width": 412,
+            "height": 46
+        },
+        {
+            "id": 7,
+            "content": "Wi - Fi Settings",
+            "column_min": 430,
+            "row_min": 1160,
+            "column_max": 764,
+            "row_max": 1226,
+            "width": 334,
+            "height": 66
+        }
+    ]
+}

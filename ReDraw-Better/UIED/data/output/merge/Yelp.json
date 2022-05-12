@@ -1,0 +1,288 @@
+{
+    "compos": [
+        {
+            "id": 0,
+            "class": "Compo",
+            "height": 9,
+            "width": 26,
+            "position": {
+                "column_min": 25,
+                "row_min": 57,
+                "column_max": 51,
+                "row_max": 66
+            }
+        },
+        {
+            "id": 1,
+            "class": "Compo",
+            "height": 3,
+            "width": 26,
+            "position": {
+                "column_min": 25,
+                "row_min": 69,
+                "column_max": 51,
+                "row_max": 72
+            }
+        },
+        {
+            "id": 2,
+            "class": "Compo",
+            "height": 60,
+            "width": 499,
+            "position": {
+                "column_min": 0,
+                "row_min": 101,
+                "column_max": 499,
+                "row_max": 161
+            },
+            "children": [
+                11,
+                12
+            ]
+        },
+        {
+            "id": 3,
+            "class": "Compo",
+            "height": 22,
+            "width": 25,
+            "position": {
+                "column_min": 24,
+                "row_min": 278,
+                "column_max": 49,
+                "row_max": 300
+            }
+        },
+        {
+            "id": 4,
+            "class": "Compo",
+            "height": 26,
+            "width": 12,
+            "position": {
+                "column_min": 25,
+                "row_min": 345,
+                "column_max": 37,
+                "row_max": 371
+            }
+        },
+        {
+            "id": 5,
+            "class": "Compo",
+            "height": 26,
+            "width": 8,
+            "position": {
+                "column_min": 40,
+                "row_min": 345,
+                "column_max": 48,
+                "row_max": 371
+            }
+        },
+        {
+            "id": 6,
+            "class": "Compo",
+            "height": 23,
+            "width": 31,
+            "position": {
+                "column_min": 21,
+                "row_min": 415,
+                "column_max": 52,
+                "row_max": 438
+            }
+        },
+        {
+            "id": 7,
+            "class": "Compo",
+            "height": 24,
+            "width": 25,
+            "position": {
+                "column_min": 24,
+                "row_min": 482,
+                "column_max": 49,
+                "row_max": 506
+            }
+        },
+        {
+            "id": 8,
+            "class": "Compo",
+            "height": 28,
+            "width": 31,
+            "position": {
+                "column_min": 67,
+                "row_min": 695,
+                "column_max": 98,
+                "row_max": 723
+            }
+        },
+        {
+            "id": 9,
+            "class": "Compo",
+            "height": 26,
+            "width": 29,
+            "position": {
+                "column_min": 235,
+                "row_min": 696,
+                "column_max": 264,
+                "row_max": 722
+            }
+        },
+        {
+            "id": 10,
+            "class": "Compo",
+            "height": 24,
+            "width": 36,
+            "position": {
+                "column_min": 398,
+                "row_min": 697,
+                "column_max": 434,
+                "row_max": 721
+            }
+        },
+        {
+            "id": 11,
+            "class": "Compo",
+            "height": 59,
+            "width": 11,
+            "position": {
+                "column_min": 0,
+                "row_min": 101,
+                "column_max": 11,
+                "row_max": 160
+            },
+            "parent": 2
+        },
+        {
+            "id": 12,
+            "class": "Compo",
+            "height": 59,
+            "width": 9,
+            "position": {
+                "column_min": 489,
+                "row_min": 101,
+                "column_max": 498,
+                "row_max": 160
+            },
+            "parent": 2
+        },
+        {
+            "id": 13,
+            "class": "Text",
+            "height": 41,
+            "width": 81,
+            "position": {
+                "column_min": 210,
+                "row_min": 38,
+                "column_max": 291,
+                "row_max": 79
+            },
+            "text_content": "yelpole"
+        },
+        {
+            "id": 14,
+            "class": "Text",
+            "height": 26,
+            "width": 21,
+            "position": {
+                "column_min": 26,
+                "row_min": 207,
+                "column_max": 47,
+                "row_max": 233
+            },
+            "text_content": "YA"
+        },
+        {
+            "id": 15,
+            "class": "Text",
+            "height": 26,
+            "width": 121,
+            "position": {
+                "column_min": 72,
+                "row_min": 207,
+                "column_max": 193,
+                "row_max": 233
+            },
+            "text_content": "Restaurants"
+        },
+        {
+            "id": 16,
+            "class": "Text",
+            "height": 24,
+            "width": 45,
+            "position": {
+                "column_min": 72,
+                "row_min": 277,
+                "column_max": 117,
+                "row_max": 301
+            },
+            "text_content": "Bars"
+        },
+        {
+            "id": 17,
+            "class": "Text",
+            "height": 27,
+            "width": 49,
+            "position": {
+                "column_min": 72,
+                "row_min": 343,
+                "column_max": 121,
+                "row_max": 370
+            },
+            "text_content": "Food"
+        },
+        {
+            "id": 18,
+            "class": "Text",
+            "height": 23,
+            "width": 79,
+            "position": {
+                "column_min": 73,
+                "row_min": 415,
+                "column_max": 152,
+                "row_max": 438
+            },
+            "text_content": "Delivery"
+        },
+        {
+            "id": 19,
+            "class": "Text",
+            "height": 27,
+            "width": 131,
+            "position": {
+                "column_min": 72,
+                "row_min": 483,
+                "column_max": 203,
+                "row_max": 510
+            },
+            "text_content": "Reservations"
+        },
+        {
+            "id": 20,
+            "class": "Text",
+            "height": 26,
+            "width": 211,
+            "position": {
+                "column_min": 23,
+                "row_min": 547,
+                "column_max": 234,
+                "row_max": 573
+            },
+            "text_content": "... More Categories"
+        },
+        {
+            "id": 21,
+            "class": "Text",
+            "height": 22,
+            "width": 274,
+            "position": {
+                "column_min": 21,
+                "row_min": 638,
+                "column_max": 295,
+                "row_max": 660
+            },
+            "text_content": "Looking for an afternoon bite ?"
+        }
+    ],
+    "img_shape": [
+        800,
+        500,
+        3
+    ]
+}

@@ -114,10 +114,6 @@ Steps:
 python main1.py
 ```
 
-[Link](https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing)
-https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing
-
-
 ## Project Structure (For reference only)
 ```bash
 ReDraw-Better/

@@ -3,7 +3,7 @@
 
 <img src="https://sagelab.io/images/sage-logo.png" style="height:15px;width:15px;" /> SAGE Research Lab
 
-> To be changed <===> From the three main steps of Design UI, Implementing UI, and Testing UI,  ReDraw majorly focuses on automatically Implementing UI for android applications. 
+> It is common practice for developers to transform a mock-up of a graphical user interface (GUI) into code. Our approach automates this process by enabling accurate prototyping of GUIs. Automated dynamic analysis, deep convolutional neural networks and computer vision are used to classify components. A data-driven, K-nearest-neighbors algorithm generates a suitable hierarchical structure from which a prototype application can be automatically assembled. We have implemented this approach for Android in a system called REDRAW-Better. This paper is an extension of the paper, Machine Learning-Based Prototyping of Graphical User Interfaces for Mobile Apps.
 
 ## Approach Overview
 

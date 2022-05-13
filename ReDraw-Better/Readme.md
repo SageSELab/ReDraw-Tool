@@ -67,7 +67,7 @@ mkdir Dataset
 16. Spinner
 
 ### Pre-Processing 
-We have provided a pre-processing file where all the images from the dataset will be arranged according to the 15 classes and are resized. This is used futher in the Image Data Generator method.
+We have provided a pre-processing file where all the images from the dataset will be arranged according to the 16 classes and are resized. This is used futher in the Image Data Generator method.
 
 ```
 python preprocessing.py

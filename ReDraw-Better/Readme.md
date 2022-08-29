@@ -99,8 +99,7 @@ Once the model is been trained we have created a google colab notebook which can
 python generate_xml.py
 ```
 
-[Link](https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing)
-https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing
+[Link](https://colab.research.google.com/drive/15LTm88j63tO885PPX8FPfiLuNVn3WkkP?usp=sharing) https://colab.research.google.com/drive/15LTm88j63tO885PPX8FPfiLuNVn3WkkP?usp=sharing 
 
 - Replace the first line with : <?xml encoding="UTF-8" standalone="yes" version="1.0"> and remove </xml> at the end.
 

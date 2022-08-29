@@ -102,6 +102,8 @@ python generate_xml.py
 [Link](https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing)
 https://colab.research.google.com/drive/1ntCboWsQAouVxhzHDlDCuW-0Z7UASjjz?usp=sharing
 
+- Replace the first line with : <?xml encoding="UTF-8" standalone="yes" version="1.0"> and remove </xml> at the end.
+
 ## Part 4: Using Generated XML to construct hierarchy of sub-components.
 
 The previously generated xml will provide an xml containing all sub-components as child nodes. Follow the steps below and run the command.

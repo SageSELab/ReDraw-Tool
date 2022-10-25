@@ -114,6 +114,13 @@ Steps:
 ```
 python main1.py
 ```
+## Project Steps (For reference only)
+- Upload input image and use UIED to get output.
+- Upload output of UIED Redraw folder to Drive. 
+- Use generate xml from UEID code from Google Colab to generate xml file.
+- Change the 1st and the last line of the xml file.
+- Use xml formator online
+- Save updated file and send for Juhi code. 
 
 ## Project Structure (For reference only)
 ```bash

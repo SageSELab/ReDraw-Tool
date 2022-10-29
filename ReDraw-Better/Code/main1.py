@@ -65,16 +65,19 @@ def preprocess_attrib(tree):
     """
     for i in tree.iter():
         if "bounds" in i.attrib.keys():
-            bounds=i.attrib["bounds"]
+            #bounds=i.attrib["bounds"]
+            #print(i.attrib["bounds"])
             bounds=i.attrib["bounds"][1:-1].split('][')  #['2,3', '4,5']
+            if len(bounds) == 1:
+                bounds=i.attrib["bounds"][1:-1].split('],[')
             l=[strs.split(',') for strs in bounds] #[['2', '3'], ['4', '5']]
             bounds=[l[0][0],l[0][1],l[1][0],l[1][1] ] #['2', '3','4', '5']
             xStart = float(bounds[0])#2.0
             yStart = float(bounds[1])#3.0
-            xEnd = float(bounds[2])#4.0
-            yEnd = float(bounds[3])#5.0
-            width = xEnd - xStart #4-2=2.0
-            height = yEnd - yStart#5-3 = 2.0
+            width = float(bounds[2])#4.0
+            height = float(bounds[3])#5.0
+            xEnd = width + xStart #4+2=6.0
+            yEnd = height + yStart#5+3 = 8.0
             centerX = (xStart + xEnd)/2 #(4+2)/2 = 3.0
             centerY = (yStart + yEnd)/2 #(5+3)/2 = 4.0
             #Adding all the calculated stuff as attributes
@@ -98,7 +101,7 @@ def get_leafs(root, list_=[]):
         list_ (list, optional): List to facilitate recursion. Defaults to [].
 
     Returns:
-        liat: List of leaf nodes of the tree
+        list: List of leaf nodes of the tree
     """
     for child in list(root):
         if list(child)==[]:
@@ -292,6 +295,8 @@ def copy_hierarchy(new_tree,common_nodes,hierarchy_nodes):
     root=new_tree.getroot()
     for i,target_node in enumerate(common_nodes):
         new_parent = ET.Element('node')
+
+        #issue of parent's coordinates is here -> should we bind the widgets into closest bounds?
         new_parent.attrib.update(hierarchy_nodes[i].attrib) #giving it attributes
         new_parent.append(target_node) #adding child to it
         flag=0
@@ -333,7 +338,7 @@ def order_attribs(new_tree):
     """
     for i in new_tree.iter():
         if "class" in i.attrib.keys():
-            i.attrib["package"] = "com.pandora.android" 
+            i.attrib["package"] = "com.android.example" 
             z=i.attrib
             ord_list = 	["bounds","checkable","checked", "class","clickable", "content-desc", "enabled", "focusable", "focused", "index","long-clickable", "package","password", "resource-id","scrollable","selected","text"]
 
@@ -452,6 +457,7 @@ def main(target_xml,xml_folder):
         print("Completed looking at files:",counter,"times")
         #Issue here---> iou scores are same for many files at a time
         best_tree_file = max(iou_scores, key=iou_scores.get)
+        print("best_tree_file",best_tree_file)
         #get the common nodes with this tree
         tree = xml_to_tree(best_tree_file)
         #get all levels of the tree
@@ -461,6 +467,7 @@ def main(target_xml,xml_folder):
 
         if current_level!=0:
             levels = new_level_order(tree.getroot())
+            #print("best tree levels=",levels)
             dataset_leafs = levels[current_level]
         else:
             dataset_leafs=get_leafs(tree.getroot(),[])
@@ -477,15 +484,17 @@ def main(target_xml,xml_folder):
             print("Completed level:",current_level)
             current_level+=1 
             levels=new_level_order(tree.getroot())#//changed here
+            print("levels=",levels)
+            print("current_level",current_level)
             current_nodes = levels[current_level]
         if current_level==3:
             flag=True
     return new_tree
 
-xml_file_name=".././raw_xml/1565 (2).xml"
-xml_folder="../XmlFiles2/"
+xml_file_name="../raw_xml/1565_latest.xml"
+xml_folder="../200_xml_dataset/" #dataset folder
 
 tree=main(xml_file_name,xml_folder)
-new_file_name=xml_file_name.split("/")[-1][:-4]+"_final.xml"
+new_file_name=xml_file_name.split("/")[-1][:-4]+"_200_files.xml"
 save_tree(tree,new_file_name)
 print("Out of xml_dict")

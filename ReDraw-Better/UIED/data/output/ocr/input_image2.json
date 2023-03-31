@@ -1,0 +1,89 @@
+{
+    "img_shape": [
+        1920,
+        1200,
+        3
+    ],
+    "texts": [
+        {
+            "id": 0,
+            "content": "11:38",
+            "column_min": 79,
+            "row_min": 161,
+            "column_max": 348,
+            "row_max": 234,
+            "width": 269,
+            "height": 73
+        },
+        {
+            "id": 1,
+            "content": "Wed , 24 Aug",
+            "column_min": 68,
+            "row_min": 278,
+            "column_max": 357,
+            "row_max": 324,
+            "width": 289,
+            "height": 46
+        },
+        {
+            "id": 2,
+            "content": "App",
+            "column_min": 69,
+            "row_min": 750,
+            "column_max": 208,
+            "row_max": 818,
+            "width": 139,
+            "height": 68
+        },
+        {
+            "id": 3,
+            "content": "App",
+            "column_min": 66,
+            "row_min": 899,
+            "column_max": 209,
+            "row_max": 965,
+            "width": 143,
+            "height": 66
+        },
+        {
+            "id": 4,
+            "content": "App",
+            "column_min": 68,
+            "row_min": 1055,
+            "column_max": 206,
+            "row_max": 1120,
+            "width": 138,
+            "height": 65
+        },
+        {
+            "id": 5,
+            "content": "App",
+            "column_min": 64,
+            "row_min": 1203,
+            "column_max": 210,
+            "row_max": 1268,
+            "width": 146,
+            "height": 65
+        },
+        {
+            "id": 6,
+            "content": "Swipe up for all apps",
+            "column_min": 359,
+            "row_min": 1647,
+            "column_max": 842,
+            "row_max": 1695,
+            "width": 483,
+            "height": 48
+        },
+        {
+            "id": 7,
+            "content": "Long press anywhere for more",
+            "column_min": 249,
+            "row_min": 1720,
+            "column_max": 952,
+            "row_max": 1769,
+            "width": 703,
+            "height": 49
+        }
+    ]
+}

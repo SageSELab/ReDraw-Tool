@@ -1,0 +1,99 @@
+{
+    "img_shape": [
+        1920,
+        1200,
+        3
+    ],
+    "texts": [
+        {
+            "id": 0,
+            "content": "Concept",
+            "column_min": 439,
+            "row_min": 69,
+            "column_max": 761,
+            "row_max": 139,
+            "width": 322,
+            "height": 70
+        },
+        {
+            "id": 1,
+            "content": "Launcher is designed to be minimal ,",
+            "column_min": 185,
+            "row_min": 410,
+            "column_max": 1017,
+            "row_max": 452,
+            "width": 832,
+            "height": 42
+        },
+        {
+            "id": 2,
+            "content": "efficient and free of distraction .",
+            "column_min": 236,
+            "row_min": 465,
+            "column_max": 962,
+            "row_max": 500,
+            "width": 726,
+            "height": 35
+        },
+        {
+            "id": 3,
+            "content": "It is free of payments , ads and tracking",
+            "column_min": 152,
+            "row_min": 575,
+            "column_max": 1049,
+            "row_max": 619,
+            "width": 897,
+            "height": 44
+        },
+        {
+            "id": 4,
+            "content": "services .",
+            "column_min": 500,
+            "row_min": 632,
+            "column_max": 701,
+            "row_max": 665,
+            "width": 201,
+            "height": 33
+        },
+        {
+            "id": 5,
+            "content": "release v1.6.0",
+            "column_min": 243,
+            "row_min": 1004,
+            "column_max": 952,
+            "row_max": 1068,
+            "width": 709,
+            "height": 64
+        },
+        {
+            "id": 6,
+            "content": "The app is open source MIT license and",
+            "column_min": 122,
+            "row_min": 1410,
+            "column_max": 1073,
+            "row_max": 1459,
+            "width": 951,
+            "height": 49
+        },
+        {
+            "id": 7,
+            "content": "available on GitHub !",
+            "column_min": 370,
+            "row_min": 1465,
+            "column_max": 831,
+            "row_max": 1504,
+            "width": 461,
+            "height": 39
+        },
+        {
+            "id": 8,
+            "content": "Make sure to check out the repository !",
+            "column_min": 159,
+            "row_min": 1574,
+            "column_max": 1049,
+            "row_max": 1622,
+            "width": 890,
+            "height": 48
+        }
+    ]
+}

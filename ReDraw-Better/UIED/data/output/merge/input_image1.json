@@ -1,0 +1,184 @@
+{
+    "compos": [
+        {
+            "id": 0,
+            "class": "Compo",
+            "height": 72,
+            "width": 1199,
+            "position": {
+                "column_min": 0,
+                "row_min": 71,
+                "column_max": 1199,
+                "row_max": 143
+            }
+        },
+        {
+            "id": 1,
+            "class": "Compo",
+            "height": 156,
+            "width": 824,
+            "position": {
+                "column_min": 188,
+                "row_min": 960,
+                "column_max": 1012,
+                "row_max": 1116
+            }
+        },
+        {
+            "id": 2,
+            "class": "Compo",
+            "height": 26,
+            "width": 31,
+            "position": {
+                "column_min": 441,
+                "row_min": 1718,
+                "column_max": 472,
+                "row_max": 1744
+            }
+        },
+        {
+            "id": 3,
+            "class": "Compo",
+            "height": 26,
+            "width": 32,
+            "position": {
+                "column_min": 512,
+                "row_min": 1718,
+                "column_max": 544,
+                "row_max": 1744
+            }
+        },
+        {
+            "id": 4,
+            "class": "Compo",
+            "height": 26,
+            "width": 32,
+            "position": {
+                "column_min": 583,
+                "row_min": 1718,
+                "column_max": 615,
+                "row_max": 1744
+            }
+        },
+        {
+            "id": 5,
+            "class": "Compo",
+            "height": 26,
+            "width": 32,
+            "position": {
+                "column_min": 654,
+                "row_min": 1718,
+                "column_max": 686,
+                "row_max": 1744
+            }
+        },
+        {
+            "id": 6,
+            "class": "Compo",
+            "height": 26,
+            "width": 31,
+            "position": {
+                "column_min": 726,
+                "row_min": 1718,
+                "column_max": 757,
+                "row_max": 1744
+            }
+        },
+        {
+            "id": 7,
+            "class": "Text",
+            "height": 42,
+            "width": 832,
+            "position": {
+                "column_min": 185,
+                "row_min": 410,
+                "column_max": 1017,
+                "row_max": 452
+            },
+            "text_content": "Launcher is designed to be minimal ,"
+        },
+        {
+            "id": 8,
+            "class": "Text",
+            "height": 35,
+            "width": 726,
+            "position": {
+                "column_min": 236,
+                "row_min": 465,
+                "column_max": 962,
+                "row_max": 500
+            },
+            "text_content": "efficient and free of distraction ."
+        },
+        {
+            "id": 9,
+            "class": "Text",
+            "height": 44,
+            "width": 897,
+            "position": {
+                "column_min": 152,
+                "row_min": 575,
+                "column_max": 1049,
+                "row_max": 619
+            },
+            "text_content": "It is free of payments , ads and tracking"
+        },
+        {
+            "id": 10,
+            "class": "Text",
+            "height": 33,
+            "width": 201,
+            "position": {
+                "column_min": 500,
+                "row_min": 632,
+                "column_max": 701,
+                "row_max": 665
+            },
+            "text_content": "services ."
+        },
+        {
+            "id": 11,
+            "class": "Text",
+            "height": 49,
+            "width": 951,
+            "position": {
+                "column_min": 122,
+                "row_min": 1410,
+                "column_max": 1073,
+                "row_max": 1459
+            },
+            "text_content": "The app is open source MIT license and"
+        },
+        {
+            "id": 12,
+            "class": "Text",
+            "height": 39,
+            "width": 461,
+            "position": {
+                "column_min": 370,
+                "row_min": 1465,
+                "column_max": 831,
+                "row_max": 1504
+            },
+            "text_content": "available on GitHub !"
+        },
+        {
+            "id": 13,
+            "class": "Text",
+            "height": 48,
+            "width": 890,
+            "position": {
+                "column_min": 159,
+                "row_min": 1574,
+                "column_max": 1049,
+                "row_max": 1622
+            },
+            "text_content": "Make sure to check out the repository !"
+        }
+    ],
+    "img_shape": [
+        1920,
+        1200,
+        3
+    ]
+}

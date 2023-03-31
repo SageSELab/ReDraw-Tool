@@ -1,0 +1,137 @@
+{
+    "compos": [
+        {
+            "id": 0,
+            "class": "Compo",
+            "height": 79,
+            "width": 1025,
+            "position": {
+                "column_min": 0,
+                "row_min": 1539,
+                "column_max": 1025,
+                "row_max": 1618
+            }
+        },
+        {
+            "id": 1,
+            "class": "Compo",
+            "height": 6,
+            "width": 41,
+            "position": {
+                "column_min": 1158,
+                "row_min": 1616,
+                "column_max": 1199,
+                "row_max": 1622
+            }
+        },
+        {
+            "id": 2,
+            "class": "Text",
+            "height": 73,
+            "width": 269,
+            "position": {
+                "column_min": 79,
+                "row_min": 161,
+                "column_max": 348,
+                "row_max": 234
+            },
+            "text_content": "11:38"
+        },
+        {
+            "id": 3,
+            "class": "Text",
+            "height": 46,
+            "width": 289,
+            "position": {
+                "column_min": 68,
+                "row_min": 278,
+                "column_max": 357,
+                "row_max": 324
+            },
+            "text_content": "Wed , 24 Aug"
+        },
+        {
+            "id": 4,
+            "class": "Text",
+            "height": 68,
+            "width": 139,
+            "position": {
+                "column_min": 69,
+                "row_min": 750,
+                "column_max": 208,
+                "row_max": 818
+            },
+            "text_content": "App"
+        },
+        {
+            "id": 5,
+            "class": "Text",
+            "height": 66,
+            "width": 143,
+            "position": {
+                "column_min": 66,
+                "row_min": 899,
+                "column_max": 209,
+                "row_max": 965
+            },
+            "text_content": "App"
+        },
+        {
+            "id": 6,
+            "class": "Text",
+            "height": 65,
+            "width": 138,
+            "position": {
+                "column_min": 68,
+                "row_min": 1055,
+                "column_max": 206,
+                "row_max": 1120
+            },
+            "text_content": "App"
+        },
+        {
+            "id": 7,
+            "class": "Text",
+            "height": 65,
+            "width": 146,
+            "position": {
+                "column_min": 64,
+                "row_min": 1203,
+                "column_max": 210,
+                "row_max": 1268
+            },
+            "text_content": "App"
+        },
+        {
+            "id": 8,
+            "class": "Text",
+            "height": 48,
+            "width": 483,
+            "position": {
+                "column_min": 359,
+                "row_min": 1647,
+                "column_max": 842,
+                "row_max": 1695
+            },
+            "text_content": "Swipe up for all apps"
+        },
+        {
+            "id": 9,
+            "class": "Text",
+            "height": 49,
+            "width": 703,
+            "position": {
+                "column_min": 249,
+                "row_min": 1720,
+                "column_max": 952,
+                "row_max": 1769
+            },
+            "text_content": "Long press anywhere for more"
+        }
+    ],
+    "img_shape": [
+        1920,
+        1200,
+        3
+    ]
+}

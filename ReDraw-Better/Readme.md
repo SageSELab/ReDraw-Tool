@@ -46,7 +46,8 @@ For Batch images
 python3 UIED/run_single.py --batch_images True
 ```
 
-## Part 2: Classify the Detected Subcomponents.
+## Part 2 (Optional): Classify the Detected Subcomponents.
+##### We have provided trained model weights for you to use. You do not need to retrain the model.
 Now before generating XML file, we need to train a CNN model for classficiaiton of detected sub-components. 
 ### Dataset
 We are using ReDraw Dataset to train our model which can be directly be available from [Link](https://zenodo.org/record/2530277#.YnF9StrMK01). [https://zenodo.org/record/2530277#.YnF9StrMK01]

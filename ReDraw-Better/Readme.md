@@ -3,7 +3,11 @@
 
 <img src="https://sagelab.io/images/sage-logo.png" style="height:15px;width:15px;" /> SAGE Research Lab
 
-> It is common practice for developers to transform a mock-up of a graphical user interface (GUI) into code. Our approach automates this process by enabling accurate prototyping of GUIs. Automated dynamic analysis, deep convolutional neural networks and computer vision are used to classify components. A data-driven, K-nearest-neighbors algorithm generates a suitable hierarchical structure from which a prototype application can be automatically assembled. We have implemented this approach for Android in a system called REDRAW-Better. This paper is an extension of the paper, Machine Learning-Based Prototyping of Graphical User Interfaces for Mobile Apps.
+Our project is focused on automating the process of creating a prototype of a graphical user interface (GUI) for Android mobile applications. Typically, developers manually transform a GUI mock-up into code, which can be a time-consuming and error-prone process. Our approach, which we have implemented in a system called REDRAW-Better, uses automated dynamic analysis, deep convolutional neural networks, and computer vision to accurately classify the components of the GUI mock-up.
+
+Once the components have been classified, a data-driven, K-nearest-neighbors algorithm is used to generate a suitable hierarchical structure from which a prototype application can be automatically assembled. This hierarchical structure allows for the automatic assembly of the GUI prototype, saving time and effort for developers.
+
+Our approach is based on the paper "Machine Learning-Based Prototyping of Graphical User Interfaces for Mobile Apps," and extends the work presented in that paper. With our automated approach, we aim to provide developers with an efficient and accurate way to prototype GUIs, allowing them to focus on other aspects of application development.
 
 ## Approach Overview
 
@@ -26,29 +30,32 @@ source venv/bin/activate
 # Install the requirements for the project into the virtual environment
 pip install -r requirements.txt
 ``` 
-## Part 1: Setting up UIED model.
+## Part 1: Detect Subcomponent From Images.
 The first step in the process for ReDraw-Better is to identify sub-components taking an image/ images as input. For Identifying sub-components we have several approached form the tabel below we can see that UIED performs the best.
 
 <img src="https://github.com/SageSELab/ReDraw-Tool/blob/main/ReDraw-Better/images/model_F1.JPG" />
 
 We have performed several changes in the UIED repository to make it compactable with our code. We apply UIED to the input image and detect all the sub-componets in the image, then we crop all the sub-components and save them in a seperate folder along with a json file storing it's coordinates. This folder is been later used to generate XML file.
 
-You can add all the input images in the UIED/data/input folder. The output of the UIED will be saved in UIED/data/output/ReDrawModel/
-
+For single image
 ```
-python run_single.py
+python3 UIED/run_single.py --input_image input_image1.png
+```
+For Batch images
+```
+python3 UIED/run_single.py --batch_images True
 ```
 
-## Part 2: Model training for Sub-Component Classification.
-Part 2 focuses on the following: Now before generating XML file, we need to train a CNN model for classficiaiton of detected sub-components. 
+## Part 2: Classify the Detected Subcomponents.
+Now before generating XML file, we need to train a CNN model for classficiaiton of detected sub-components. 
 ### Dataset
-We are using ReDraw Dataset which can be directly be available from [Link](https://zenodo.org/record/2530277#.YnF9StrMK01). [https://zenodo.org/record/2530277#.YnF9StrMK01]
+We are using ReDraw Dataset to train our model which can be directly be available from [Link](https://zenodo.org/record/2530277#.YnF9StrMK01). [https://zenodo.org/record/2530277#.YnF9StrMK01]
 ```
 mkdir Dataset
 !wget https://zenodo.org/record/2530277/files/CNN-Data-Final.tar.gz?download=1
 ```
 
-### Selected Sub-Component:
+### Selected Most Common Sub-Component:
 1. Switch
 2. ToggleButton 
 3. ImageButton
@@ -91,28 +98,25 @@ Hyper-Parameters while model training:
 python train_model.py
 ```
 
-## Part 3: Using Trained Model for predicting output on images of sub-components obtained from UIED Model.
+## Part 3: Using Trained Model for predicting output on images of sub-components.
 
-Once the model is been trained we have created a google colab notebook which can be used to generate XML file. We have also added the .py file which can be used with the following command.
+Once the model is been trained we use the generate_xml.py file.
 
+To run for single image
 ```
-python generate_xml.py
+python3 generate_xml.py --input_image input_image1.png --run_batch False
 ```
-
-[Link](https://colab.research.google.com/drive/15LTm88j63tO885PPX8FPfiLuNVn3WkkP?usp=sharing) https://colab.research.google.com/drive/15LTm88j63tO885PPX8FPfiLuNVn3WkkP?usp=sharing 
-
-- Replace the first line with : <?xml encoding="UTF-8" standalone="yes" version="1.0"> and remove </xml> at the end.
+To run for batch images
+```
+python3 generate_xml.py --run_batch True
+```
 
 ## Part 4: Using Generated XML to construct hierarchy of sub-components.
 
-The previously generated xml will provide an xml containing all sub-components as child nodes. Follow the steps below and run the command.
-Steps:
-1. Use the generated xml file from part 3 on line no, 485
-2. Replace the xml dataset folder on line no, 486
-3. Install requirements from requirements.txt
+Finally we generate the UIX file with the hierarchy using KNN.
 
 ```
-python main1.py
+python generate_hierarchy.py
 ```
 ## Project Steps (For reference only)
 - Upload input image and use UIED to get output.

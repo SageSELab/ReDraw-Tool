@@ -30,6 +30,21 @@ source venv/bin/activate
 # Install the requirements for the project into the virtual environment
 pip install -r requirements.txt
 ``` 
+
+## Part 0: Download Dataset and trained model.
+Create a folder name "Dataset" in the same folder
+``` 
+#Download zip file: 
+https://drive.google.com/file/d/1x0Xcom9nzAZjOV_PCWWsZI9HRJZhrlWV/view?usp=share_link
+unzip Dataset.zip
+``` 
+Create a folder named "Trained Model" in the same folder
+``` 
+#Download zip file: 
+https://drive.google.com/file/d/1HjQ1hsX_vVZk4PEqtPUXHOVyyJyWg-_C/view?usp=share_link
+unzip Trained Model.zip
+``` 
+
 ## Part 1: Detect Subcomponent From Images.
 The first step in the process for ReDraw-Better is to identify sub-components taking an image/ images as input. For Identifying sub-components we have several approached form the tabel below we can see that UIED performs the best.
 
